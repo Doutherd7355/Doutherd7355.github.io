@@ -1,0 +1,42 @@
+/* Main Navigation */
+nav {
+    padding-top: .5rem;
+    border-bottom: .5px solid #C4C4C4 ;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+ nav li {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0rem .5rem;
+    padding: 1rem;
+    text-align: center;
+    /* border: 1px solid black; */
+    font-family: 'Lora', serif;
+    color: black;
+}
+
+nav li:hover{
+    background-color: #FBFAFA ;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Dropdown Navigation */
+.dropdown-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
