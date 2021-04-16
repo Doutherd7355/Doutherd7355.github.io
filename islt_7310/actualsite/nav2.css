@@ -1,7 +1,9 @@
 /* Main Navigation */
 nav {
-    padding-top: .5rem;
-    border-bottom: .5px solid #C4C4C4 ;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: white;
 }
 
 nav ul {
@@ -9,13 +11,14 @@ nav ul {
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-end;
+    margin: 0rem;
 }
 
  nav li {
     text-align: center;
     font-size: 1.1rem;
-    margin: 0rem .5rem;
-    padding: 1rem;
+    margin: 0rem .2rem;
+    padding: 1.2rem;
     text-align: center;
     /* border: 1px solid black; */
     font-family: 'Lora', serif;
@@ -31,12 +34,12 @@ a {
 }
 
 
-/* Dropdown Navigation */
+/* Dropdown Navigation
 .dropdown-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0;
     margin: 0;
-}
+} */
 

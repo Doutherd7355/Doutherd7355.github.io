@@ -28,7 +28,7 @@ nav a {
     color: black;
 }
 
-/*format all navigation <a> elements*/
+
 nav a:link{
     background-color: white;
     }
@@ -40,13 +40,13 @@ nav a:link{
     }
     
     
-    /*position sub-menu or drop-down*/
+   
     nav ul>li ul {
     position: absolute;
     display: none;
     }
     
-    /*special hover to display the drop-down*/
+
     nav>ul>li:hover>ul{
     display: block;
     }
