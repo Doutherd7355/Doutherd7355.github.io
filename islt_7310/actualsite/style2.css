@@ -40,25 +40,26 @@ h3 {
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    kerning: .2rem;
 }
 
 .justify {
     text-align: justify;
     text-justify: distribute;
-    word-spacing: -.1rem;
     line-height: 1.5rem;
 }
 
 .btn {
-    width: 7rem;
-    height: 1rem;
+    width: 7.5rem;
+    height: auto;
     background-color: black;
     color: white;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.7rem;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .btn:active {
@@ -73,25 +74,26 @@ p {
 
 
 /* Home Page */
-main{
+main {
     height: 100vh;
-    margin-bottom: 20rem;
+    margin-bottom: 40rem;
 }
+
 section {
     display: grid;
     grid-template: repeat(2 min-content)/ 60% 40%;
     grid-gap: 0rem;
-    padding: 0rem 5rem;
+    padding: 0rem 5.6rem;
 }
 
 section>.purpose {
     border: 1px solid #C4C4C4;
     grid-area: 1/1/1/1;
-    padding: 0rem 5rem;
+    padding: 0rem 4.4rem;
 }
 
 .purpose>h2 {
-    margin: 2rem 12rem 1.3rem;
+    margin: 2rem 10rem 1.3rem;
     padding: .7rem;
 }
 
@@ -99,8 +101,10 @@ section>.purpose {
     padding: .5rem;
 }
 
+
+
 .purpose ol {
-    padding: 1rem 4rem 0rem 4rem;
+    padding: .4rem 4rem 0rem 4rem;
 
 }
 
@@ -113,20 +117,18 @@ section>.purpose {
 .photo {
     background-color: #5BF5D6;
     grid-area: 1/2/span 2/2;
+    
 }
 
 .photo>img {
-    width: 32rem;
+    width: 30.5rem;
     height: 22rem;
     margin: 2rem 1rem 0rem;
     border: 5px solid black;
-    margin-bottom: 7.3rem;
+    margin-bottom: 8.2rem;
 }
 
-.photo>.btn {
-    margin-top: 1.9rem;
-    margin-bottom: 1rem;
-}
+
 
 .article-banner-section {
     grid-area: 2/1/2/1;
@@ -137,15 +139,14 @@ section>.purpose {
     border: 1px solid #C4C4C4;
     width: 42rem;
     position: relative;
-    bottom: 1.65rem;
-    left: 18.5rem;
-
+    bottom: 2rem;
+    left: 1-0rem;
 }
 
 .article-title {
     text-align: center;
     vertical-align: middle;
-    margin: .2rem;
+    margin: .1rem;
     font-size: 1.2rem;
 }
 
@@ -154,15 +155,33 @@ section>.purpose {
     margin: 0rem 1rem;
 }
 
-.about-author {
-   width: 100%;
-   height: auto;
-   text-align: center;
-   margin: 5rem 0rem;
-   background-color: #E5E5E5;
+/* Home Author Section */
+
+.about-author-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 3rem 0rem;
+    background-color: #FBFAFA;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+
 }
 
-.author-photo> img{
-    border-radius: 100%;
+.author-content {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0rem;
+    justify-content: center;
 
+}
+
+.author-photo>img {
+    border-radius: 500%;
+}
+
+.author-content>.author-btn {
+    width: 8rem;
+    margin: 0 auto;
+    
 }

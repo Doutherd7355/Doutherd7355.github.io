@@ -4,7 +4,25 @@ nav {
     position: fixed;
     top:0;
     background-color: white;
+    display: inline-flex;
+    z-index: 2;
 }
+
+nav> .logo{
+    font-family: 'Lato', sans-serif;
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-right: 58%;
+    font-weight:800;
+    font-size: 2rem;
+}
+
+nav> .logo a{
+    display: inline-block;
+    padding: .5rem 1.2rem;
+    color: black;
+}
+
 
 nav ul {
     display: flex;
@@ -21,12 +39,20 @@ nav ul {
     padding: 1.2rem;
     text-align: center;
     /* border: 1px solid black; */
-    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+    
     color: black;
 }
 
 nav li:hover{
-    background-color: #FBFAFA ;
+    font-weight: bold;
+    font-size: 1.19rem;
+   
+}
+
+nav li:active{
+    color: white;
+    background-color: black;
 }
 
 a {
