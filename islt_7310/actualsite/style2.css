@@ -185,3 +185,26 @@ section>.purpose {
     margin: 0 auto;
     
 }
+
+/* References & Resources Page */
+
+.rr-section{
+  padding: 0rem 15rem;
+  margin-bottom: 3rem;
+}
+
+
+.rr-content>ul li{
+  padding-bottom: .8rem;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+.p-indent{
+  text-indent: 2rem;
+}
+
+.ph-indent{
+  text-indent: -2.5rem;
+ padding-left: 2.5rem;
+}
