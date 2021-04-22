@@ -196,7 +196,7 @@ section>.purpose {
 
 .about-content-area {
     display: grid;
-    grid-template: repeat(4 1fr)/ 35% 65%;
+    grid-template: repeat(4 min-content)/ 35% 65%;
     grid-gap: 0rem;
     height: 100vh;
     margin: 0rem 5.6rem;
@@ -213,19 +213,19 @@ section>.purpose {
 
 .author-info {
     padding: 5rem;
-   
+
 }
 
-.author-photo{
+.author-photo {
     padding: .6rem 0rem;
 }
 
-.author-info> h2{
+.author-info>h2 {
     font-size: 2rem;
 }
 
 
-.author-info> h3{
+.author-info>h3 {
     padding-bottom: .5rem;
 }
 
@@ -234,31 +234,72 @@ section>.purpose {
     width: auto;
     padding: 1rem 2.5rem;
     margin: 3rem 0rem;
-    border: 1px solid #C4C4C4;
+    border: 1px solid #E5E5E5;
 }
 
-.intro-paragraph-section> p{
-   margin-bottom: 0rem;
+.intro-paragraph-section>p {
+    padding-top: 1rem;
+    margin-bottom: 0rem;
 }
 
 .author-video-section {
     background-color: #F5E7AE;
+    margin: 0rem 5rem 10rem;
+    height: auto;
     grid-area: 2/1/3/span 2;
+    text-align: center;
+  
+}
+
+video {
+    padding: 3rem;
+
 }
 
 .resume-btn {
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 97.8%;
+    padding: .8rem;
+}
+
+.fa-file-download {
+    padding-right: .5rem;
 }
 
 .author-learn-button>.learn-btn {
     display: inline-block;
-    width: 100%;
+    width: auto;
 }
 
-.placeholder {
-    background-color: paleturquoise;
+.author-linkedin-btn {
+    position: relative;
+    width: 2.8rem;
+    bottom: 13rem;
+    left: 78.7rem;
+    border: 1px solid #c4c4c4;
 }
+
+.fa-linkedin {
+    padding: .4rem;
+    color: #0072B1;
+}
+
+#about-article-banner-section {
+    margin: 28rem 0rem 0rem;
+    padding: 10rem 0rem 0rem;
+    width: 100%;
+    height: auto;
+}
+
+#about-article-banner-section>.author-article-banner-section {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+
+
 
 /* References & Resources Page */
 
@@ -266,7 +307,6 @@ section>.purpose {
     text-align: center;
     margin: -7rem 0rem 7rem;
     line-height: 1.9rem;
-    ;
 }
 
 .rr-section {
@@ -303,8 +343,32 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 5rem;
-    background-color: red;
+    height: 10rem;
+    border-top: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer>.quick-contact,
+.foot-links {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 5rem 0rem 0rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    kerning: .2rem;
+}
+
+footer>.foot-links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+footer>.foot-links a {
+    color: blue;
+    margin: .5rem;
 }
 
 /* MEDIA QUERIES */
@@ -318,16 +382,14 @@ footer {
 
     /* About Page */
 
-    .about-content-area {
+    .about-content-area{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .about-content-area>div {
-        width: 85%;
-        margin: 1rem 0rem;
-    }
 
     .intro-paragraph-section {
         background-color: white;
@@ -341,35 +403,28 @@ footer {
         padding: 1rem;
     }
 
-    .author-video-section {
-        background-color: #F5E7AE;
+    .resume-btn{
+        padding: 1rem 0rem;
     }
 
-
-
-    .author-resume-button>.resume-btn {
-
-        position: relative;
-        right: .5rem;
-        bottom: 2.5rem;
-        margin-bottom: 5rem;
-        padding: 1rem .5rem;
-    }
-
-
-    .article-banner {
-        background-color: white;
-        border: 1px solid #C4C4C4;
+    #about-article-banner-section {
+        margin: 0rem;
+        padding: 0rem;
         width: 100%;
+        height: auto;
+    }
+    .author-article-banner-section> .article-banner{
+        display: none;
     }
 
-    .author-learn-button>.learn-btn {
-        width: 97.3%;
+    .author-article-banner-section> .author-learn-btn{
+        z-index: 5;
         position: relative;
-        bottom: 5rem;
-        margin-bottom: 5rem;
-        padding: 1rem .5rem;
-
+        top: 80rem;
     }
+
+   footer{
+       top: 75rem
+   }
 
 }
