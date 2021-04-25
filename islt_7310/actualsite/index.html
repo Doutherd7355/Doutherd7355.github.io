@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="./nav2.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,900&display=swap"
-        rel="stylesheet">
-    <title>Home</title>
+   <!-- Stylesheets -->
+   <link rel="stylesheet" href="./style2.css">
+   <link rel="stylesheet" href="./nav2.css">
+   <script src="https://kit.fontawesome.com/a656d85f8c.js" crossorigin="anonymous"></script>
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400&display=swap"
+       rel="stylesheet">
+   <link
+       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,900&display=swap"
+       rel="stylesheet">
+    <title>Index</title>
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         <div class="logo">
             <a href="./index.html">TLT</a>
         </div>
-        <ul>
+        <ul class="menu1">
 
             <a href="./index.html">
                 <li> Home</li>
@@ -41,11 +43,13 @@
                 <li>Contact</li>
             </a>
         </ul>
+
+        <i class="fas fa-bars fa-2x menu2"></i>
     </nav>
-    <header>
+    <header id="home-header">
         <h1>Technology Leadership in TESOL</h1>
     </header>
-    <main>
+    <main id="home-main">
         <section class="main-content">
             <div class="purpose">
                 <h2 class="yellow-bkg">Purpose & Goals</h2>
@@ -87,8 +91,8 @@
             </div>
             <div class="photo">
 
-                <img src="./resources/vector1.png" alt="technology growth thinking">
-                <a href="./learn.html">
+                <img src="./resources/vector3.png" alt="technology growth thinking">
+                <a href="./learn.html" class="home-learn-btn">
                     <div class="btn">Let's Learn!</div>
                 </a>
             </div>
@@ -100,7 +104,9 @@
                 </div>
             </div>
         </section>
-
+        <a href="./learn.html" class="mobile-home-learn-btn">
+            <div class="btn">Let's Learn!</div>
+        </a>
 
         <div class="about-author-container">
             <div class="author-content">
@@ -112,9 +118,19 @@
                 </a>
             </div>
         </div>
+        
     </main>
     <footer>
-        Email: vdydx&#64;umsystem.edu | &#169 Vanessa Doutherd 2021
+        <div class="quick-contact">
+            Email: vdydx&#64;umsystem.edu | &#169 Vanessa Doutherd 2021
+        </div>
+        <div class="foot-links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Learn</a>
+            <a href="">References</a>
+            <a href="">Contact</a>
+        </div>
     </footer>
 </body>
 

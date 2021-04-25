@@ -41,6 +41,7 @@ nav li {
     /* border: 1px solid black; */
     font-family: 'Open Sans', sans-serif;
     color: black;
+    
 }
 
 nav li:hover {
@@ -54,8 +55,9 @@ nav li:active {
     background-color: black;
 }
 
-a {
+ a {
     text-decoration: none;
+    margin-bottom: 0rem;
 }
 
 .menu2 {
