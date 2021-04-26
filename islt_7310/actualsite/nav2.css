@@ -1,72 +1,173 @@
 /* Main Navigation */
-nav {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    display: inline-flex;
-    z-index: 2;
+.menu1 {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  display: inline-flex;
+  z-index: 2;
 }
 
-nav>.logo {
-    font-family: 'Lato', sans-serif;
-    width: 3.75rem;
-    height: 3.75rem;
-    margin-right: 58%;
-    font-weight: 800;
-    font-size: 2rem;
+.menu1>.logo {
+  font-family: 'Lato', sans-serif;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-right: 58%;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
-nav>.logo a {
-    display: inline-block;
-    padding: .5rem 1.2rem;
-    color: black;
+.menu1>.logo a {
+  display: inline-block;
+  padding: .5rem 1.2rem;
+  color: black;
 }
 
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: flex-end;
-    margin: 0rem;
+.menu1 ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: 0rem;
 }
 
 nav li {
-    text-align: center;
-    font-size: 1.1rem;
-    margin: 0rem .2rem;
-    padding: 1.2rem;
-    text-align: center;
-    /* border: 1px solid black; */
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0rem .2rem;
+  padding: 1.2rem;
+  text-align: center;
+  /* border: 1px solid black; */
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+
 }
 
 nav li:hover {
-    font-weight: bold;
-    font-size: 1.19rem;
+  font-weight: bold;
+  font-size: 1.19rem;
 
 }
 
 nav li:active {
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
- a {
-    text-decoration: none;
-    margin-bottom: 0rem;
+a {
+  text-decoration: none;
+  margin-bottom: 0rem;
 }
 
+/* Mobile Menu */
 .menu2 {
-    display: none;
-    padding: 1.5rem;
+  display: none;
+  padding: 1.5rem;
 }
 
-/* Dropdown Navigation
-.dropdown-nav {
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 1.5rem;
+  float: left;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+/*
+  * Just a quick hamburger
+  */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000000;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#mobile-menu {
+  position: absolute;
+  width: 100vw;
+  height: 70vh;
+  margin: -6.25rem 0 0 -3.12rem;
+  padding-top: 7.5rem;
+  background: #ededed;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+
+
+#mobile-menu li {
+  padding: 1.9rem 0;
+  font-size: 1.5rem;
+}
+
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+
+/* Dropdown Navigation */
+/* .dropdown-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,17 +178,21 @@ nav li:active {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-/* nav menu */
-    .logo {
-        display: none;
-    }
+  /* nav menu */
+  .logo {
+    display: none;
+  }
 
-    .menu1 {
-        display: none;
-    }
+  .menu1 {
+    display: none;
+  }
 
-    .menu2{
-        display: inline-block;
+  .menu2 {
+    display: inline-block;
 
-    }
-};
+  }
+
+
+}
+
+;

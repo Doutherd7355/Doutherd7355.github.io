@@ -321,22 +321,24 @@ video {
 }
 
 .side-nav {
-    width: 16%;
+    width: 17%;
     height: 48vh;
     position: fixed;
-    padding: 10rem .8rem;
+    padding: 10rem .5rem;
     line-height: 1.5rem;
     z-index: 2;
+    background-color: #faf8f893;
 }
 
-.side-nav>.side-nav-links {
+.side-nav>.side-nav-links>ol {
     display: flex;
     flex-flow: column wrap;
+    padding-left: 2rem;
 }
 
-.side-nav-links>a {
+.side-nav-links>ol>a {
     font-size: .85rem;
-    padding: .8rem 1rem;
+    padding: .8rem .2rem;
     font-family: 'Open Sans', sans-serif;
     color: blue;
     text-decoration: underline;
@@ -346,13 +348,26 @@ video {
     display: none;
 }
 
+/* SideNav Dropdown */
+/* come back to this later! */
+/* .sidenav-dropdown>li ul {
+    position: absolute;
+    display: none;
+}
+
+.sidenav-dropdown>ul>li:hover>ul {
+    display: block;
+} */
+
 .learn-content-area {
     width: 100%;
     margin: 0rem 1rem 0rem 17.2rem;
+    padding-top: 5rem;
 }
 
 .learn-content-area>header>h1 {
     margin: 3.5rem;
+    padding-bottom: 2rem;
 }
 
 .learn-img {
@@ -500,7 +515,7 @@ footer>.foot-links a {
 
     /* Home Page */
     #home-header {
-        margin: 2rem;
+        margin: 0rem 2rem 2.5rem;
     }
 
     .main-content {
@@ -509,12 +524,12 @@ footer>.foot-links a {
     }
 
     .main-content>.purpose {
-        padding: .5rem;
+        padding: 2rem;
     }
 
     .purpose>h2 {
-        margin: 2rem 11.5rem 1.3rem;
-
+        margin: 2rem 8rem 1.3rem;
+        width: 50%;
     }
 
     .photo {
@@ -526,15 +541,20 @@ footer>.foot-links a {
     }
 
     .about-author-container {
-        width: 90%;
+        width: 92%;
+        height: auto;
         margin: 0 auto;
         background-color: #5BF5D6;
-        padding: 1.5rem;
+        padding: 0rem 1rem;
+    }
+
+    .author-content {
+        padding: 2rem 0rem;
     }
 
     .mobile-home-learn-btn {
         display: block;
-        margin: 8.5rem 0rem;
+        margin: 5.5rem 0rem;
     }
 
 
@@ -606,8 +626,7 @@ footer>.foot-links a {
         flex-flow: column wrap;
         margin: 1rem 3rem;
         padding: 4rem;
-       
-        background-color: #FBFAFA ;
+        background-color: #FBFAFA;
     }
 
     .mobile-side-nav-links>a {

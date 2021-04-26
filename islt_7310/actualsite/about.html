@@ -21,12 +21,11 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="menu1">
         <div class="logo">
             <a href="./index.html">TLT</a>
         </div>
-        <ul class="menu1">
-
+        <ul>
             <a href="./index.html">
                 <li> Home</li>
             </a>
@@ -43,8 +42,36 @@
                 <li>Contact</li>
             </a>
         </ul>
+    </nav>
+    <!-- Mobile Navigation -->
+    <nav role="navigation" class="menu2">
+        <div id="menuToggle">
 
-        <i class="fas fa-bars fa-2x menu2"></i>
+            <input type="checkbox" />
+
+            <!-- Hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="mobile-menu">
+                <a href="./index.html">
+                    <li> Home</li>
+                </a>
+                <a href="./about.html">
+                    <li>About</li>
+                </a>
+                <a href="./learn.html">
+                    <li>Learn</li>
+                </a>
+                <a href="./references.html">
+                    <li>References</li>
+                </a>
+                <a href="./contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
     </nav>
     <header>
         <h1 class="title-H1">About The Author</h1>
@@ -59,7 +86,8 @@
                         <img src="./resources/profilepic.jfif" alt="Profile Picture">
                     </div>
                     <h3> <span class="blue-bkg"> B.A, M.A, EdS </span></h3>
-                    <blockquote><em> "Daring leadership is ultimately about serving other people, <br class="about-break"> not
+                    <blockquote><em> "Daring leadership is ultimately about serving other people, <br
+                                class="about-break"> not
                             ourselves."
                             Brené
                             Brown </em> </blockquote>
@@ -106,7 +134,7 @@
             </div>
             <div class="author-video-section">
                 <div class="author-media-video">
-                    <video  controls>
+                    <video controls>
                         <source src="./resources/projectvideo_about/projectvideo_about.wmv" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
