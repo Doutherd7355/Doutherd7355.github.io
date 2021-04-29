@@ -173,6 +173,61 @@ nav a:hover{
     margin: 0;
 } */
 
+
+/* Footer */
+/* Footer */
+footer {
+  background-image: url("./resources/foot-pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  border-top: 5px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+footer a:hover, .far:hover {
+  text-decoration: underline;
+}
+
+footer>.quick-contact,
+.foot-links, .copyright {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0rem 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  kerning: .2rem;
+}
+
+footer>.quick-contact{
+  padding-top: 3rem;
+}
+
+footer>.foot-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 5rem;
+ 
+}
+
+
+.foot-phone-num, .foot-email{
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer>.foot-links a {
+  color: blue;
+  margin: 1rem;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
