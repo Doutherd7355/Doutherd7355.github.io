@@ -742,9 +742,11 @@ video {
 
 @media print {
 
-    html, body {
+    body {
         font-size: 12px;
         height: auto;
+        margin: 25mm;
+        color: black;
     }
 
     nav,
@@ -760,7 +762,7 @@ video {
 
     header>h1 {
         padding: 0rem;
-        margin: 2rem 0rem 3rem;
+        margin: 0rem;
         font-size: 2rem;
     }
 
@@ -768,22 +770,32 @@ video {
         display: none;
     }
 
+    .author-info>h2 {
+        font-size: 1.5rem;
+    }
+
     .about-content-area {
         display: flex;
         flex-flow: column nowrap;
-        margin: 0rem 1rem;
+        margin: 0rem;
+
     }
 
     .author-info-section {
         display: flex;
         flex-flow: row nowrap;
+        border: none;
     }
 
     .print-education {
         display: inline-flex;
-        width: 55%;
-        padding: 2.5rem;
+        width: 60%;
+        padding: 1rem;
         text-align: left;
+    }
+
+    .print-education>ul {
+        padding: .5rem;
     }
 
     .author-info {
@@ -798,19 +810,29 @@ video {
 
     .intro-paragraph-section {
         margin: 0rem;
+        padding: .6rem;
+    }
+
+    .intro-paragraph-section>p {
+        padding-top: 0rem;
     }
 
     .about-break {
         display: none;
     }
 
-    i, .foot-links, .copyright{
+    i,
+    .foot-links,
+    .copyright {
         display: none !important;
     }
 
-    footer{
+    footer {
         border: none !important;
         bottom: 18rem !important;
     }
 
+    .quick-contact>a {
+        color: black;
+    }
 }
