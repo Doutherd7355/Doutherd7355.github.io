@@ -604,6 +604,7 @@ video {
     /* Universal Styles */
     body {
         height: auto;
+        width: 100%;
     }
 
     h1 {
