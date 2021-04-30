@@ -628,6 +628,7 @@ video {
     .main-content {
         padding: .5rem;
         margin: 0 auto;
+        width: 100%;
     }
 
     .main-content>.purpose {
