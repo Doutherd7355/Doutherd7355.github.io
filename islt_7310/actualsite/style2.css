@@ -31,7 +31,12 @@ h1 {
     font-family: 'Lora', serif;
     text-align: center;
     font-size: 3rem;
-    margin: 15rem 0rem 15rem;
+    margin: 13rem 0rem 13rem;
+}
+
+header {
+    border-bottom: 5px solid black;
+    margin-bottom: 9rem;
 }
 
 h2 {
@@ -84,15 +89,23 @@ a {
     top: .2rem;
 }
 
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* #home-main a:hover {
+    font-size: 1rem;
+}#about-main a:hover {
+    font-size: 1.2rem;
+}  */
+
 /* Home Page */
 #home-main {
     height: 100vh;
-    margin-bottom: 35rem;
+    margin-bottom: 39rem;
 }
 
-#home-main a:hover {
-    font-size: 1rem;
-}
+
 
 .main-content {
     display: grid;
@@ -213,10 +226,6 @@ a {
     margin: 0rem 0rem 10rem;
 }
 
-#about-main a:hover {
-    font-size: 1.2rem;
-}
-
 .about-content-area {
     display: grid;
     grid-template: repeat(4 min-content)/ 35% 65%;
@@ -290,13 +299,16 @@ video {
     padding: .8rem;
 }
 
+.resume-btn:hover {
+    width: 93.2%;
+}
+
 .fa-file-download {
     padding-right: .5rem;
 }
 
-#about-article-banner-section {
-    position: relative;
-    top: 3rem;
+.author-linkedin-btn>a:hover {
+    font-size: 1.1rem;
 }
 
 .author-learn-btn>.learn-btn {
@@ -314,6 +326,7 @@ video {
     bottom: 13.1rem;
     left: 78.7rem;
     border: 1px solid #c4c4c4;
+    background: white;
 }
 
 .fa-linkedin {
@@ -322,8 +335,8 @@ video {
 }
 
 .author-linkedin-btn:hover {
-    width: 3rem;
-    height: 3.2rem;
+    width: 3.2rem;
+    height: 3rem;
 }
 
 #about-article-banner-section {
@@ -331,6 +344,11 @@ video {
     padding: 10rem 0rem 0rem;
     width: 100%;
     height: auto;
+}
+
+#about-article-banner-section {
+    position: relative;
+    top: 3rem;
 }
 
 #about-article-banner-section>.author-article-banner-section {
@@ -348,9 +366,7 @@ video {
     margin-top: 3.8rem;
 }
 
-#learn-main a:hover {
-    font-size: .9rem;
-}
+
 
 .side-nav {
     width: 17%;
@@ -361,41 +377,112 @@ video {
     z-index: 2;
 }
 
+.side-nav-links {
+    height: auto;
+}
+
 .side-nav>.side-nav-links>ol {
     display: flex;
     flex-flow: column wrap;
     padding-left: 2rem;
 }
 
-#learn-main li {
+.side-nav-links>ol {
+    font-size: .85rem;
     color: blue;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.side-nav-links>ol>li>a:visited {
+    color: blue;
+}
+
+#learn-header {
+    border-bottom: none;
+    margin-bottom: 0rem;
 }
 
 #learn-main a {
     display: block;
-    font-size: .85rem;
     width: 100%;
     padding: .2rem .2rem;
     margin: .3rem 0rem;
-    font-family: 'Open Sans', sans-serif;
-    color: blue;
+    text-decoration: none;
+}
+
+#learn-main a:hover{
     text-decoration: underline;
 }
+
+#learn-main li:hover {
+    transform: scale(1.05);
+}
+
 
 .mobile-side-nav {
     display: none;
 }
 
 /* SideNav Dropdown */
-/* come back to this later! */
-/* .sidenav-dropdown>li ul {
-    position: absolute;
+.side-nav-links a {
+    display: block;
+    padding: .9rem;
+    color: blue;
+}
+
+.side-nav-links a:link {
+    background-color: white;
+}
+
+.side-nav-links a:hover,
+.side-nav-links a:focus {
+    background-color: none;
+    text-decoration: underline;
+}
+
+.side-nav-links a:active {
+    background-color: none;
+}
+
+.side-nav-dropdown> li{
+    list-style: none;
+}
+
+.side-nav-links>ol>li ul {
+    position: static;
+
     display: none;
 }
 
-.sidenav-dropdown>ul>li:hover>ul {
+/* SideNav Animation */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.side-nav-links>ol>li:hover>ul {
     display: block;
-} */
+    -webkit-animation: fadeIn 1.5s;
+    animation: fadeIn 1.5s;
+}
+
+/* End Side Nav */
 
 .learn-content-area {
     width: 100%;
@@ -452,9 +539,10 @@ video {
     padding: 2rem;
 }
 
-#learn-foot {
-    z-index: 4;
+.mobile-about-learn-btn {
+    display: none;
 }
+
 
 /* References & Resources Page */
 #reference-main {
@@ -467,7 +555,7 @@ video {
 
 .reference-paragraph {
     text-align: center;
-    margin: -12rem 0rem 9rem;
+    padding: 1rem 0rem 10rem;
     line-height: 1.9rem;
 }
 
@@ -510,20 +598,27 @@ video {
 @media only screen and (max-width: 600px) {
 
     /* Universal Styles */
-    h1 {
-        margin: 10rem 0rem 7rem;
+    body {
+        height: auto;
     }
 
-    footer {
+    h1 {
+        margin: 10rem 2rem 15rem;
+    }
+
+    header {
+        border: none;
+        margin-bottom: 0rem;
+    }
+
+    /* footer {
         position: static;
         padding-bottom: 0rem;
-        margin-top: 10rem;
-    }
+        margin-top: 6.9rem;
+    } */
 
     /* Home Page */
-    #home-header {
-        margin: 0rem 2rem 2.5rem;
-    }
+
 
     .main-content {
         padding: .5rem;
@@ -564,10 +659,13 @@ video {
         margin: 5.5rem 0rem;
     }
 
+    #home-foot {
+        margin-top: 2.8rem;
+    }
 
     /* About Page */
     #about-main {
-        margin-bottom: 25rem;
+        margin-bottom: 70rem;
     }
 
     .about-content-area {
@@ -576,6 +674,15 @@ video {
         justify-content: center;
         width: 100%;
         margin: 0 auto;
+    }
+
+    .author-info {
+
+        padding: 2.5rem;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
     }
 
     .print-education {
@@ -592,6 +699,7 @@ video {
         border-top: white;
         position: relative;
         bottom: 2rem;
+        margin-bottom: 0rem;
     }
 
     .intro-paragraph-section>p {
@@ -603,46 +711,59 @@ video {
     }
 
     video {
-        width: 25.6rem;
-        height: 20rem;
+        width: 32rem;
+        height: 19rem;
+        padding: 1rem;
+
     }
 
     .author-linkedin-btn {
         display: none;
     }
 
-    /* #about-article-banner-section {
-        margin: 0rem;
-        padding: 0rem;
-        width: 100%;
-        height: auto;
-    } */
-    .author-article-banner-section>.article-banner {
+    #about-article-banner-section {
         display: none;
     }
 
-    .author-article-banner-section>.author-learn-btn {
-        display: none;
+    .mobile-about-learn-btn {
+        display: block;
+        position: relative;
+        top: 65rem;
+    }
+
+    #about-foot {
+        margin-top: 4.5rem;
     }
 
     /* Learn Page */
+
+
+
     .mobile-side-nav {
         display: block;
-        width: 80%;
+        width: 85%;
+        position: relative;
+        top: 3rem;
         margin: 0 auto;
     }
 
     .mobile-side-nav-links {
         display: flex;
         flex-flow: column wrap;
-        margin: 1rem 3rem;
-        padding: 4rem;
+        justify-content: space-between;
+        margin: 1rem 2.3rem;
+        padding: 2rem;
         background-color: #FBFAFA;
+    }
+
+    #learn-main a {
+        margin: 1rem 0rem;
     }
 
     .mobile-side-nav-links>a {
         font-size: .85rem;
-        padding: .8rem 1rem;
+        ;
+        margin: 10rem 0rem;
         font-family: 'Open Sans', sans-serif;
         color: blue;
         text-decoration: underline;
@@ -660,10 +781,11 @@ video {
 
     .learn-content-area {
         margin: 0rem;
+        padding-top: 0rem;
     }
 
     .learn-content-area>header>h1 {
-        margin: 5rem 3.5rem 8rem;
+        margin: 5rem 1rem 8rem;
     }
 
     .learn-img>img {
@@ -681,27 +803,28 @@ video {
     }
 
     #learn-foot {
-        z-index: 4;
+        margin-top: 8rem;
     }
 
     /* References & Resources Page */
-    #reference-main {
-        margin-bottom: 150rem;
-    }
 
-    .reference-paragraph {
+    /* .reference-paragraph {
         text-align: center;
-        padding: 4rem 4rem 0rem;
+        padding: 4rem 2.5rem 0rem;
         line-height: 1.9rem;
-    }
+    } */
 
     .reference-paragraph-break {
         display: none;
     }
 
+    #reference-main {
+        margin-bottom: 0rem;
+    }
+
     .rr-section {
-        padding: 0rem 3rem;
-        margin-bottom: 3rem;
+        padding: 0rem 1.8rem;
+        margin-bottom: 1rem;
     }
 
     .rr-section>h2 {
@@ -734,6 +857,10 @@ video {
     .ph-indent {
         text-indent: -2.5rem;
         padding-left: 2.5rem;
+    }
+
+    #reference-foot {
+        margin-top: 10rem;
     }
 
 }

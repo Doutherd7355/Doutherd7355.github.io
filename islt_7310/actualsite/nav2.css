@@ -6,6 +6,7 @@
   background-color: white;
   display: inline-flex;
   z-index: 2;
+  border-bottom: .5px solid #f1f0f0;
 }
 
 #logo {
@@ -35,7 +36,6 @@ nav li {
   text-align: center;
   font-size: 1.1rem;
   text-align: center;
-  /* border: 1px solid black; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -50,7 +50,7 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
-  font-size: 1.19rem;
+  transition: font-weight .9s ease;
 }
 
 nav a:active {
@@ -60,6 +60,10 @@ nav a:active {
 
 #logo a {
   font-size: 2rem;
+}
+
+#logo> a:hover{
+  font-weight: bolder;
 }
 
 #logo>a:active {
@@ -143,7 +147,7 @@ nav a:active {
 #mobile-menu {
   position: absolute;
   width: 100vw;
-  height: 70vh;
+  height: auto;
   margin: -6.25rem 0 0 -3.12rem;
   padding-top: 7.5rem;
   background: #ededed;
@@ -188,6 +192,7 @@ footer {
   border-top: 5px solid black;
   display: flex;
   flex-direction: column;
+  z-index: 4;
 }
 
 footer a:hover,
@@ -260,4 +265,3 @@ footer>.foot-links a {
 
 
 }
-
