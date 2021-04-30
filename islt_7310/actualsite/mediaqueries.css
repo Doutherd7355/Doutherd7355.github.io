@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
-/* Extra small devices (phones, 320px and down) */
-@media only screen and (max-width: 320px) {
+/* Extra small devices (phones, 720px and down) */
+@media only screen and (max-width: 720px) {
 
     /* Universal Styles */
     body {
@@ -11,7 +11,6 @@
 
     h1 {
         margin: 10rem 2rem 15rem;
-        text-align: center;
     }
 
     header {
@@ -19,9 +18,9 @@
         margin-bottom: 0rem;
     }
 
-    main{
-       display: flex;
-       flex-flow: column nowrap;
+    main {
+        display: flex;
+        flex-flow: column nowrap;
     }
 
     /* footer {
@@ -375,4 +374,113 @@
     .quick-contact>a {
         color: black;
     }
+}
+
+@media only screen and (max-width: 575px) {
+
+    
+    #home-header {
+        position: relative;
+        left: .5rem;
+    }
+
+    .purpose>h2 {
+        margin: 0rem;
+        width: 100%;
+    }
+
+    .main-content>.purpose {
+        width: 90%;
+    }
+
+    .purpose ol {
+        padding: .4rem 1.5rem;
+    }
+
+    .mobile-home-learn-btn {
+        width: 109%;
+    }
+
+    .about-author-container {
+        width: 100%;
+    }
+
+    #home-foot {
+        margin-top: 16.2rem;
+        width: 109%;
+    }
+
+    footer>.foot-links,
+    .quick-contact {
+        flex-wrap: wrap;
+    }
+
+    /* About Page */
+
+    #author-header,
+    #about-main,
+    #about-foot {
+     width: 152%;
+ 
+
+    }
+
+    
+
+   
+
+    #about-foot {
+        margin-top: 3.5rem;
+
+    }
+
+    /* Learn Page */
+
+    #learn-main,
+    #learn-foot {
+        width: 152%;
+    }
+
+    .learn-sections {
+        width: 100%;
+        /* position: relative;
+        right: .5rem; */
+    }
+
+    .learn-section>h2 {
+        padding: 1rem 1.2rem;
+    }
+
+    .learn-content {
+        width: 85%;
+    }
+
+    .learn-content>p {
+        padding: 2rem .5rem;
+    }
+
+    .mobile-side-nav-links {
+        margin: 1rem;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    /* References Page */
+
+    #reference-header,
+    #reference-main,
+    #reference-foot {
+
+        width: 152%;
+    }
+
+    #reference-header> h1{
+        margin-bottom: 12rem;
+    }
+}
+
+@media only screen and (width: 368px) {
+    /* Home */
+
+
 }
