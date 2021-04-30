@@ -594,8 +594,8 @@ video {
 }
 
 /* MEDIA QUERIES */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 720px and down) */
+@media only screen and (max-width: 720px) {
 
     /* Universal Styles */
     body {
