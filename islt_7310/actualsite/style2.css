@@ -1,6 +1,10 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
 
+@-ms-viewport {
+    width: device-width;
+}
+
 /* nav */
 body {
     margin: 0;
@@ -390,7 +394,7 @@ video {
 .side-nav-links>ol {
     font-size: .85rem;
     color: blue;
-    
+
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -411,7 +415,7 @@ video {
     text-decoration: none;
 }
 
-#learn-main a:hover{
+#learn-main a:hover {
     text-decoration: underline;
 }
 
@@ -445,7 +449,7 @@ video {
     background-color: none;
 }
 
-.side-nav-dropdown> li{
+.side-nav-dropdown>li {
     list-style: none;
 }
 
