@@ -1,0 +1,377 @@
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 720px and down) */
+@media only screen and (max-width: 720px) {
+
+    /* Universal Styles */
+    body {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 10rem 2rem 15rem;
+    }
+
+    header {
+        border: none;
+        margin-bottom: 0rem;
+    }
+
+    main{
+       display: flex;
+       flex-flow: column nowrap;
+    }
+
+    /* footer {
+        position: static;
+        padding-bottom: 0rem;
+        margin-top: 6.9rem;
+    } */
+
+    /* Home Page */
+
+
+    .main-content {
+        padding: .5rem;
+        margin: 0 auto;
+    }
+
+    .main-content>.purpose {
+        padding: 2rem;
+    }
+
+    .purpose>h2 {
+        margin: 2rem 8rem 1.3rem;
+        width: 50%;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .article-banner-section {
+        display: none;
+    }
+
+    .about-author-container {
+        width: 92%;
+        height: auto;
+        margin: 0 auto;
+        background-color: #5BF5D6;
+        padding: 0rem 1rem;
+    }
+
+    .author-content {
+        padding: 2rem 0rem;
+    }
+
+    .mobile-home-learn-btn {
+        display: block;
+        margin: 5.5rem 0rem;
+    }
+
+    #home-foot {
+        margin-top: 2.8rem;
+    }
+
+    /* About Page */
+    #about-main {
+        margin-bottom: 70rem;
+    }
+
+    .about-content-area {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .author-info {
+
+        padding: 2.5rem;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
+    }
+
+    .print-education {
+        display: none;
+    }
+
+    .about-break {
+        display: none;
+    }
+
+    .intro-paragraph-section {
+        background-color: white;
+        border: 1px solid #c4c4c4;
+        border-top: white;
+        position: relative;
+        bottom: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .intro-paragraph-section>p {
+        padding: 1rem;
+    }
+
+    .resume-btn {
+        padding: 1rem .3rem;
+    }
+
+    video {
+        width: 32rem;
+        height: 19rem;
+        padding: 1rem;
+
+    }
+
+    .author-linkedin-btn {
+        display: none;
+    }
+
+    #about-article-banner-section {
+        display: none;
+    }
+
+    .mobile-about-learn-btn {
+        display: block;
+        position: relative;
+        top: 65rem;
+    }
+
+    #about-foot {
+        margin-top: 4.5rem;
+    }
+
+    /* Learn Page */
+
+
+
+    .mobile-side-nav {
+        display: block;
+        width: 85%;
+        position: relative;
+        top: 3rem;
+        margin: 0 auto;
+    }
+
+    .mobile-side-nav-links {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        margin: 1rem 2.3rem;
+        padding: 2rem;
+        background-color: #FBFAFA;
+    }
+
+    #learn-main a {
+        margin: 1rem 0rem;
+    }
+
+    .mobile-side-nav-links>a {
+        font-size: .85rem;
+        ;
+        margin: 10rem 0rem;
+        font-family: 'Open Sans', sans-serif;
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .side-nav {
+        display: none;
+    }
+
+    #learn-main {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 3.8rem;
+    }
+
+    .learn-content-area {
+        margin: 0rem;
+        padding-top: 0rem;
+    }
+
+    .learn-content-area>header>h1 {
+        margin: 5rem 1rem 8rem;
+    }
+
+    .learn-img>img {
+        border: 5px solid black;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .learn-section {
+        background-color: #FBFAFA;
+        width: 91%;
+        left: 1.6rem;
+        border: 1px solid #c4c4c4;
+        margin: 1.5rem 0rem;
+    }
+
+    #learn-foot {
+        margin-top: 8rem;
+    }
+
+    /* References & Resources Page */
+
+    /* .reference-paragraph {
+        text-align: center;
+        padding: 4rem 2.5rem 0rem;
+        line-height: 1.9rem;
+    } */
+
+    .reference-paragraph-break {
+        display: none;
+    }
+
+    #reference-main {
+        margin-bottom: 0rem;
+    }
+
+    .rr-section {
+        padding: 0rem 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .rr-section>h2 {
+        text-align: left;
+    }
+
+    .rr-content {
+        padding-top: 1rem;
+    }
+
+    #ref-content-link:hover {
+        font-size: 1rem;
+    }
+
+    .rr-section>.pink-bkg,
+    .yellow-bkg {
+        width: 40%;
+    }
+
+    .rr-content>ul li {
+        padding-bottom: .8rem;
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+    }
+
+    .p-indent {
+        text-indent: 2rem;
+    }
+
+    .ph-indent {
+        text-indent: -2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    #reference-foot {
+        margin-top: 10rem;
+    }
+
+}
+
+/* About Page Print Query */
+
+@media print {
+
+    body {
+        font-size: 12px;
+        height: auto;
+        margin: 25mm;
+        color: black;
+    }
+
+    nav,
+    .author-video-section,
+    .author-linkedin-btn,
+    #about-article-banner-section {
+        display: none !important;
+    }
+
+    #about-main {
+        margin-bottom: 0rem;
+    }
+
+    header>h1 {
+        padding: 0rem;
+        margin: 0rem;
+        font-size: 2rem;
+    }
+
+    .author-info>h3 {
+        display: none;
+    }
+
+    .author-info>h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content-area {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0rem;
+
+    }
+
+    .author-info-section {
+        display: flex;
+        flex-flow: row nowrap;
+        border: none;
+    }
+
+    .print-education {
+        display: inline-flex;
+        width: 60%;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .print-education>ul {
+        padding: .5rem;
+    }
+
+    .author-info {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .author-photo>img {
+        width: 30%;
+        height: 30%
+    }
+
+    .intro-paragraph-section {
+        margin: 0rem;
+        padding: .6rem;
+    }
+
+    .intro-paragraph-section>p {
+        padding-top: 0rem;
+    }
+
+    .about-break {
+        display: none;
+    }
+
+    i,
+    .foot-links,
+    .copyright {
+        display: none !important;
+    }
+
+    footer {
+        border: none !important;
+        bottom: 18rem !important;
+    }
+
+    .quick-contact>a {
+        color: black;
+    }
+}
