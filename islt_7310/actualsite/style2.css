@@ -39,8 +39,8 @@ h1 {
 }
 
 header {
-    border-bottom: 5px solid black;
-    margin-bottom: 9rem;
+    /* border-bottom: 5px solid black; */
+    margin-bottom: 5rem;
 }
 
 h2 {
@@ -370,8 +370,6 @@ video {
     margin-top: 3.8rem;
 }
 
-
-
 .side-nav {
     width: 17%;
     height: 48vh;
@@ -394,7 +392,6 @@ video {
 .side-nav-links>ol {
     font-size: .85rem;
     color: blue;
-
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -502,12 +499,26 @@ video {
 .learn-img {
     text-align: center;
     padding: 0rem;
-
 }
 
 .learn-img>img {
     border: 5px solid black;
     width: 75%;
+}
+.learning-goals-objectives{
+    padding: 0rem 1rem;
+}
+
+#learn-goals-objectives-list{
+    padding-bottom: 1rem;
+}
+#learn-goals-objectives-list li{
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    padding: .5rem 1rem;
+}
+#learn-goals-objectives-list li:hover{
+    transform: none;
 }
 
 .learn-sections {
@@ -516,17 +527,35 @@ video {
 
 }
 
-.learn-section {
+.learn-section, .learning-goals-objectives-container {
     position: relative;
     left: 12.2%;
     background-color: #FBFAFA;
     width: 75.6%;
     border: 1px solid #c4c4c4;
     margin: 3rem 0rem;
-
 }
 
-.learn-section>h2 {
+.learning-goals-objectives-container h2{
+    padding: 1rem 0rem 0rem;
+}
+
+.goal-statement{
+    text-align: center;
+    padding: 0rem  0rem .5rem;
+}
+
+#learn-goals-objectives-list> .goal{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+#learn-goals-objectives-list> .objective{
+padding-left: 4rem;
+}
+
+.learn-section h2 {
     text-align: left;
     padding: 1.5rem;
 }
@@ -541,6 +570,72 @@ video {
 
 .learn-content>p {
     padding: 2rem;
+}
+
+.learn-quote{
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -3rem;
+}
+
+#leadership-standards{
+    font-family: 'Open Sans', sans-serif; 
+    padding: 0rem 7rem; 
+    margin-top: -1rem;
+}
+
+#leadership-standards li{
+    padding: .5rem 0rem;
+}
+
+#leadership-standards li:hover{
+    transform: none;
+}
+
+#p-web-link a{
+    display: inline;
+    color: blue;
+}
+
+table{
+    margin: 0 auto;
+    padding: 1.8rem;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+td, th{
+    border: 1px solid #E5E5E5;
+}
+
+th{
+    padding: 1rem;
+    text-align: center;
+}
+
+.cell-padding{
+    width: 50%;
+    padding: 1.5rem; 
+}
+
+.img-resize-up{
+    width: 60%;
+}
+.img-resize-down{
+    width: 60%;
+}
+.img-resize-down2{
+    width: 80%;
+}
+
+.learn-content img{
+    display: block;
+    margin: 1rem;
+}
+
+.learn-content iframe{
+   width: 100%;
+   
 }
 
 .mobile-about-learn-btn {
