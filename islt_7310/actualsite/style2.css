@@ -567,6 +567,9 @@ padding-left: 4rem;
     margin: 0 auto;
     padding: 1rem;
 }
+.learn-content h3{
+    margin-left: 2rem;
+}
 
 .learn-content>p {
     padding: 2rem;
@@ -604,14 +607,21 @@ table{
     width: 100%;
     font-family: 'Open Sans', sans-serif;
 }
+
+tbody tr:nth-of-type(odd){
+    background-color: #E5E5E5;
+}
+
 td, th{
-    border: 1px solid #E5E5E5;
+    border: 1px solid #c4c4c4;
 }
 
 th{
     padding: 1rem;
     text-align: center;
 }
+
+
 
 .cell-padding{
     width: 50%;
