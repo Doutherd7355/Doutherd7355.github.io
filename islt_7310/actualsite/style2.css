@@ -359,7 +359,7 @@ video {
     flex-direction: row;
 }
 
-#about-article-banner-section .article-banner{
+#about-article-banner-section .article-banner {
     position: relative;
     bottom: 2.7rem;
 }
@@ -405,7 +405,7 @@ video {
     margin-bottom: 0rem;
 }
 
-.article-date-author{
+.article-date-author {
     text-align: center;
     position: relative;
     bottom: 3rem;
@@ -512,19 +512,22 @@ video {
     border: 5px solid black;
     width: 75%;
 }
-.learning-goals-objectives{
+
+.learning-goals-objectives {
     padding: 0rem 1rem;
 }
 
-#learn-goals-objectives-list{
+#learn-goals-objectives-list {
     padding-bottom: 1rem;
 }
-#learn-goals-objectives-list li{
+
+#learn-goals-objectives-list li {
     font-family: 'Lato', sans-serif;
     list-style: none;
     padding: .5rem 1rem;
 }
-#learn-goals-objectives-list li:hover{
+
+#learn-goals-objectives-list li:hover {
     transform: none;
 }
 
@@ -534,7 +537,8 @@ video {
 
 }
 
-.learn-section, .learning-goals-objectives-container {
+.learn-section,
+.learning-goals-objectives-container {
     position: relative;
     left: 12.2%;
     background-color: #FBFAFA;
@@ -543,23 +547,23 @@ video {
     margin: 3rem 0rem;
 }
 
-.learning-goals-objectives-container h2{
+.learning-goals-objectives-container h2 {
     padding: 1rem 0rem 0rem;
 }
 
-.goal-statement{
+.goal-statement {
     text-align: center;
-    padding: 0rem  0rem .5rem;
+    padding: 0rem 0rem .5rem;
 }
 
-#learn-goals-objectives-list> .goal{
+#learn-goals-objectives-list>.goal {
     font-weight: 600;
     font-size: 1.1rem;
     margin-top: 1.5rem;
 }
 
-#learn-goals-objectives-list> .objective{
-padding-left: 4rem;
+#learn-goals-objectives-list>.objective {
+    padding-left: 4rem;
 }
 
 .learn-section h2 {
@@ -574,7 +578,8 @@ padding-left: 4rem;
     margin: 0 auto;
     padding: 1rem;
 }
-.learn-content h3{
+
+.learn-content h3 {
     margin-left: 2rem;
 }
 
@@ -582,76 +587,79 @@ padding-left: 4rem;
     padding: 2rem;
 }
 
-.learn-quote{
+.learn-quote {
     width: 75%;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: -3rem;
 }
 
-#leadership-standards{
-    font-family: 'Open Sans', sans-serif; 
-    padding: 0rem 7rem; 
+#leadership-standards {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0rem 7rem;
     margin-top: -1rem;
 }
 
-#leadership-standards li{
+#leadership-standards li {
     padding: .5rem 0rem;
 }
 
-#leadership-standards li:hover{
+#leadership-standards li:hover {
     transform: none;
 }
 
-#p-web-link a{
+#p-web-link a {
     display: inline;
     color: blue;
 }
 
-table{
+table {
     margin: 0 auto;
     padding: 1.8rem;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
-tbody tr:nth-of-type(odd){
+tbody tr:nth-of-type(odd) {
     background-color: #E5E5E5;
 }
 
-td, th{
+td,
+th {
     border: 1px solid #c4c4c4;
 }
 
-th{
+th {
     padding: 1rem;
     text-align: center;
 }
 
 
 
-.cell-padding{
+.cell-padding {
     width: 50%;
-    padding: 1.5rem; 
+    padding: 1.5rem;
 }
 
-.img-resize-up{
+.img-resize-up {
     width: 60%;
 }
-.img-resize-down{
+
+.img-resize-down {
     width: 60%;
 }
-.img-resize-down2{
+
+.img-resize-down2 {
     width: 80%;
 }
 
-.learn-content img{
+.learn-content img {
     display: block;
     margin: 1rem;
 }
 
-.learn-content iframe{
-   width: 100%;
+.learn-content iframe {
+    width: 100%;
 }
 
 .mobile-about-learn-btn {
@@ -708,3 +716,70 @@ th{
     padding-left: 2.5rem;
 }
 
+/* Contact Page */
+
+#contact-header {
+    margin-bottom: -5rem;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+.form-content-container {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #F5E7AE;
+    margin: 0 auto;
+    border: 5px solid black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr{
+    border-bottom: 1px solid black;
+    border-top: none;
+}
+
+.form-header{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5rem 0rem;
+    text-align: center;
+}
+.form-user-info, .form-user-message-area{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin:2%;
+}
+
+.form-text{
+    width: 80%;
+    margin: 0 auto;
+}
+
+input{
+    width:98.7%;
+    height: 2.5rem;
+}
+
+input, textarea{
+    margin: .5rem 0rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-user-message-area{
+    margin-bottom: 7%;
+    
+}
+
+button{
+    position: relative;
+    top: 5%;
+}
+
+form{
+    margin-bottom: 7rem;
+}

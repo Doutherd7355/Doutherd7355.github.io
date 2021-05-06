@@ -62,15 +62,61 @@
             </ul>
         </div>
     </nav>
-    <header>
-        <h1 class="title-H1">Contact</h1>
+    <header id="contact-header">
+        <h1>Contact</h1>
     </header>
-    <main>
+    <main class="contact-form">
+        <form action="mailto:vdydx@umsystem.edu?Subject=TLT%20Website%20mail%20" method="POST" enctype="text/plain">
+            <div class="form-content-container">
+                <div class="form-header">
+                    <h2>Contact Me</h2>
+                    <hr>
+                    vdydx@umsystem.edu |
+                    +1-888-888-8888
+                </div>
+                <div class="form-user-info">
+                    <div class=" form-text input-name">
+                        <label for="first-name">Your First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name" name="name" required>
+                    </div>
+
+                    <div class="form-text">
+                        <label for="last-name">Your Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name" name="name" required>
+                    </div>
+                    <div class="form-text">
+                        <label for="email">Your Email</label> <input type="email" id="email"
+                            placeholder="example@example.com" name="email" value="" required>
+                    </div>
+                </div>
+                <div class="form-user-message-area">
+                    <div class="form-text">
+                        <label for="subject">Your Message Subject</label> <input type="text" id="subject"
+                            value="Educational Website Contact" name="subject" required>
+                    </div>
+
+                    <textarea name="message" rows="15" cols="47" class="form-control form-message "
+                        placeholder="Write your message here..." required></textarea>
+                    <button type="submit" class="contact-btn btn" name="button">Send</button>
+                </div>
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
     <footer>
         <div class="quick-contact">
-            <i class="far fa-envelope"></i><a href="#"><span class="foot-email"> vdydx&#64;umsystem.edu</span></a>| 
+            <i class="far fa-envelope"></i><a href="#"><span class="foot-email"> vdydx&#64;umsystem.edu</span></a>|
             <i class="fas fa-phone-alt"></i> <span class="foot-phone-num">+1-888-888-8888</span>
         </div>
         <div class="foot-links">
