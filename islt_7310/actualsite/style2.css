@@ -725,7 +725,7 @@ th {
 .contact-form {
     width: 100%;
     margin: 0 auto;
-   
+
 }
 
 .form-content-container {
@@ -738,48 +738,60 @@ th {
     font-family: 'Open Sans', sans-serif;
 }
 
-hr{
+hr {
     border-bottom: 1px solid black;
     border-top: none;
 }
 
-.form-header{
+.form-header {
     width: 70%;
     margin: 0 auto;
     padding: 1.5rem 0rem;
     text-align: center;
 }
-.form-user-info, .form-user-message-area{
+
+.form-user-info,
+.form-user-message-area {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    margin:2%;
+    margin: 2%;
 }
 
-.form-text{
+.form-text {
     width: 80%;
     margin: 0 auto;
 }
 
-input{
-    width:98.7%;
+input {
+    width: 98.7%;
     height: 2.5rem;
 }
 
-input, textarea{
+textarea {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    right: .5%;
+
+}
+
+input,
+textarea {
     margin: .5rem 0rem;
     font-family: 'Open Sans', sans-serif;
 }
-.form-user-message-area{
+
+.form-user-message-area {
     margin-bottom: 7%;
-    
+
 }
 
-button{
+button {
     position: relative;
     top: 5%;
 }
 
-form{
+form {
     margin-bottom: 7rem;
 }

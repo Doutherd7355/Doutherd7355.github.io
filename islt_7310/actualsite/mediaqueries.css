@@ -286,6 +286,11 @@
     #reference-foot {
         margin-top: 10rem;
     }
+    /* Content Page */
+
+    .form-content-container{
+        width: 90%;
+    }
 
 }
 
@@ -433,8 +438,6 @@
     #about-main,
     #about-foot {
      width: 152%;
- 
-
     }
 
     #about-foot {
@@ -484,6 +487,13 @@
 
     #reference-header> h1{
         margin-bottom: 12rem;
+    }
+
+    /* Contact Page */
+
+    textarea{
+        position: relative;
+        right: 1%;
     }
 }
 
