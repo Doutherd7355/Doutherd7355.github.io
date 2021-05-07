@@ -1,5 +1,7 @@
 /* MEDIA QUERIES */
 /* Extra small devices (phones, 720px and down) */
+
+
 @media only screen and (max-width: 720px) {
 
     /* Universal Styles */
@@ -149,8 +151,6 @@
 
     /* Learn Page */
 
-
-
     .mobile-side-nav {
         display: block;
         width: 85%;
@@ -185,15 +185,31 @@
         display: none;
     }
 
+    .learning-goals-objectives-container{
+        left:0;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    
     #learn-main {
         display: flex;
         flex-flow: row nowrap;
         margin-top: 3.8rem;
+        
     }
 
     .learn-content-area {
         margin: 0rem;
         padding-top: 0rem;
+    }
+
+    .learn-content h3{
+        margin-left: .5rem;
+    }
+    #learn-goals-objectives-list{
+        padding-inline-start: 1.5rem;
+        line-height: 1.3rem;
     }
 
     .learn-content-area>header>h1 {
@@ -208,7 +224,7 @@
 
     .learn-section {
         background-color: #FBFAFA;
-        width: 91%;
+        width: 100%;
         left: 1.6rem;
         border: 1px solid #c4c4c4;
         margin: 1.5rem 0rem;
@@ -224,6 +240,10 @@
 
     .cell-padding{
         padding: 1.1rem;
+    }
+
+    #leadership-standards{
+        padding: 0rem 3rem;
     }
 
     #learn-foot {
@@ -449,13 +469,23 @@
 
     #learn-main,
     #learn-foot {
-        width: 152%;
+        margin: 0 auto;
+    }
+
+    .article-date-author{
+        bottom: 6rem;
     }
 
     .learn-sections {
-        width: 100%;
+        margin: 0 auto;
+        font: 1.5rem;
         /* position: relative;
         right: .5rem; */
+    }
+
+    .learn-section{
+        width: 100%;
+        left: 0;
     }
 
     .learn-section>h2 {
@@ -463,13 +493,14 @@
     }
 
     .learn-content {
-        width: 85%;
+        width: 90%;
     }
 
     .learn-content>p {
         padding: 2rem .5rem;
     }
 
+    
     .mobile-side-nav-links {
         margin: 1rem;
         padding: 3rem;

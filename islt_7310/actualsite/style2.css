@@ -109,13 +109,11 @@ a {
     margin-bottom: 39rem;
 }
 
-
-
 .main-content {
     display: grid;
     grid-template: repeat(2 min-content)/ 60% 40%;
     grid-gap: 0rem;
-    padding: 0rem 5.6rem;
+    padding: 0rem 5%;
     margin-bottom: 6rem;
 }
 
@@ -161,11 +159,15 @@ a {
 .home-learn-btn {
     display: block;
     position: relative;
-    bottom: 1.2rem;
+    bottom: .8rem;
+    left: 20rem;
+
 }
 
 .article-banner-section {
     grid-area: 2/1/2/1;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .article-banner {
@@ -222,6 +224,7 @@ a {
 .mobile-home-learn-btn {
     display: none;
 }
+
 
 /* ABOUT AUTHOR PAGE */
 /* main author content layout */
@@ -563,7 +566,7 @@ video {
 }
 
 #learn-goals-objectives-list>.objective {
-    padding-left: 4rem;
+    padding-left: 1rem;
 }
 
 .learn-section h2 {

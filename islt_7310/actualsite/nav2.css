@@ -13,7 +13,7 @@
   font-family: 'Lato', sans-serif;
   width: 3.75rem;
   height: 3.75rem;
-  margin-right: 56.5%;
+  margin-right: auto;
   font-weight: 800;
   font-size: 2rem;
 }
@@ -29,7 +29,8 @@
   flex-direction: row;
   list-style-type: none;
   justify-content: flex-end;
-  margin: 0rem;
+  margin: 0rem 2rem 0rem 0rem;
+  width: 100%;
 }
 
 nav li {
