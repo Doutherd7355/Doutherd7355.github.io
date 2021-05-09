@@ -569,6 +569,15 @@ video {
     padding-left: 1rem;
 }
 
+#section4 img{
+    display: block;
+    margin: 7% auto;
+}
+
+.learn-resource h4{
+    text-align: center;
+}
+
 .learn-section h2 {
     text-align: left;
     padding: 1.5rem;
@@ -616,20 +625,24 @@ video {
     color: blue;
 }
 
-table {
+table{
     margin: 0 auto;
     padding: 1.8rem;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.3rem;
+    text-align: justify;
 }
 
-tbody tr:nth-of-type(odd) {
-    background-color: #E5E5E5;
+caption{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 td,
 th {
     border: 1px solid #c4c4c4;
+    
 }
 
 th {
@@ -637,7 +650,10 @@ th {
     text-align: center;
 }
 
-
+tfoot td{
+    border: none;
+    font-size: .8rem;
+}
 
 .cell-padding {
     width: 50%;
@@ -656,18 +672,17 @@ th {
     width: 80%;
 }
 
-.learn-content img {
-    display: block;
-    margin: 1rem;
-}
-
-.learn-content iframe {
-    width: 100%;
-}
-
 .mobile-about-learn-btn {
     display: none;
 }
+
+#section4 iframe{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 /* References & Resources Page */
