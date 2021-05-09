@@ -563,7 +563,7 @@ video {
 }
 
 #learn-goals-objectives-list>.goal {
-    
+
     font-size: 1.1rem;
     margin-top: 1.5rem;
 }
@@ -572,7 +572,8 @@ video {
     padding-left: 1rem;
 }
 
-#section4 img {
+#section4 img,
+#section3 img {
     display: block;
     margin: 7% auto;
 }
@@ -665,13 +666,14 @@ tfoot td {
 
 .meaningful-integration-scenario,
 .scenario-answers {
+    margin: 0 auto;
     padding: 2rem;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5rem;
     background-color: #E5E5E5;
 }
 
-.scenario-answers{
+.scenario-answers {
     margin-top: 5%;
 }
 
