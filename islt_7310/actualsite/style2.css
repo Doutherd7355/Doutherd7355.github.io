@@ -120,7 +120,7 @@ a {
 .main-content>.purpose {
     border: 1px solid #C4C4C4;
     grid-area: 1/1/1/1;
-    padding: 0rem 4.4rem;
+    padding: 0rem 4rem;
 }
 
 .purpose>h2 {
@@ -168,6 +168,9 @@ a {
     grid-area: 2/1/2/1;
     display: flex;
     flex-flow: row nowrap;
+    position: relative;
+    left: 4%;
+    bottom: 3%;
 }
 
 .article-banner {
@@ -556,11 +559,11 @@ video {
 
 .goal-statement {
     text-align: center;
-    padding: 0rem 0rem .5rem;
+    padding: 0rem 1rem .5rem;
 }
 
 #learn-goals-objectives-list>.goal {
-    font-weight: 600;
+    
     font-size: 1.1rem;
     margin-top: 1.5rem;
 }
@@ -569,12 +572,12 @@ video {
     padding-left: 1rem;
 }
 
-#section4 img{
+#section4 img {
     display: block;
     margin: 7% auto;
 }
 
-.learn-resource h4{
+.learn-resource h4 {
     text-align: center;
 }
 
@@ -625,7 +628,7 @@ video {
     color: blue;
 }
 
-table{
+table {
     margin: 0 auto;
     padding: 1.8rem;
     width: 100%;
@@ -634,7 +637,7 @@ table{
     text-align: justify;
 }
 
-caption{
+caption {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -642,7 +645,7 @@ caption{
 td,
 th {
     border: 1px solid #c4c4c4;
-    
+
 }
 
 th {
@@ -650,7 +653,7 @@ th {
     text-align: center;
 }
 
-tfoot td{
+tfoot td {
     border: none;
     font-size: .8rem;
 }
@@ -660,23 +663,35 @@ tfoot td{
     padding: 1.5rem;
 }
 
+.meaningful-integration-scenario,
+.scenario-answers {
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+    background-color: #E5E5E5;
+}
+
+.scenario-answers{
+    margin-top: 5%;
+}
+
 .img-resize-up {
-    width: 60%;
+    width: 70%;
 }
 
 .img-resize-down {
-    width: 60%;
+    width: 70%;
 }
 
 .img-resize-down2 {
-    width: 80%;
+    width: 90%;
 }
 
 .mobile-about-learn-btn {
     display: none;
 }
 
-#section4 iframe{
+#section4 iframe {
     width: 80%;
     display: block;
     margin-left: auto;
