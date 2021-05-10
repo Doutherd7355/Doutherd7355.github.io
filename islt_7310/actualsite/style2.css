@@ -156,13 +156,7 @@ a {
     margin-bottom: 9rem;
 }
 
-.home-learn-btn {
-    display: block;
-    position: relative;
-    bottom: .8rem;
-    left: 20rem;
 
-}
 
 .article-banner-section {
     grid-area: 2/1/2/1;
@@ -171,6 +165,14 @@ a {
     position: relative;
     left: 4%;
     bottom: 3%;
+}
+
+.home-learn-btn {
+    display: block;
+    position: relative;
+    bottom: .79rem;
+    left: 20rem;
+
 }
 
 .article-banner {
@@ -451,12 +453,12 @@ video {
 
 .side-nav-links a:hover,
 .side-nav-links a:focus {
-    background-color: none;
+    background-color: white;
     text-decoration: underline;
 }
 
 .side-nav-links a:active {
-    background-color: none;
+    background-color: white;
 }
 
 .side-nav-dropdown>li {
@@ -610,17 +612,18 @@ video {
     margin-bottom: -3rem;
 }
 
-#leadership-standards {
+#section2 ul,
+#section2 ol {
     font-family: 'Open Sans', sans-serif;
     padding: 0rem 7rem;
     margin-top: -1rem;
 }
 
-#leadership-standards li {
+#section2 li {
     padding: .5rem 0rem;
 }
 
-#leadership-standards li:hover {
+#section2 li:hover {
     transform: none;
 }
 
