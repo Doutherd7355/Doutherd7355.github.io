@@ -111,7 +111,7 @@ a {
 
 .main-content {
     display: grid;
-    grid-template: repeat(2 min-content)/ 60% 40%;
+    grid-template: repeat(2, min-content)/ 60% 40%;
     grid-gap: 0rem;
     padding: 0rem 5%;
     margin-bottom: 6rem;
@@ -238,7 +238,7 @@ a {
 
 .about-content-area {
     display: grid;
-    grid-template: repeat(4 min-content)/ 35% 65%;
+    grid-template: repeat(4, min-content)/ 45% 55%;
     grid-gap: 0rem;
     height: 100vh;
     margin: 0rem 5.6rem;
@@ -250,7 +250,7 @@ a {
     text-align: center;
     display: flex;
     align-items: center;
-    grid-area: 1/1/2/1;
+    grid-area: 1/1/2/2;
 }
 
 .author-info {
@@ -712,7 +712,7 @@ tfoot td {
     font-size: 1.13rem;
 }
 
-#reference-header h1{
+#reference-header h1 {
     margin: 10rem 0rem;
 }
 
