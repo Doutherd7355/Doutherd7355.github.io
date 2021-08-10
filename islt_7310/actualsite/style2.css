@@ -146,6 +146,7 @@ a {
 .photo {
     background-color: #5BF5D6;
     grid-area: 1/2/span 2/2;
+    text-align: center;
 }
 
 .photo>img {
