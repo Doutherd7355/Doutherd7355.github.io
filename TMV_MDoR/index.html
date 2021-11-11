@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="Missouri Department of Revenue Home Page, containing links to motor vehicle and driver licensing services, and taxation and collection services for the state of Missouri."
+        name="description" />
+    <meta
+        content="Missouri, car license, car licensing, vehicle license, vehicle licensing, boat license, boat licensing, trailers, license plates, income tax, business tax, withholding, taxes, tax forms, drivers license, driver license, driver's license, driver's licensing, Revenue department, dmv"
+        name="keywords" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta content="#3a5170" name="theme-color">
+    <!-- Windows Phone -->
+    <meta content="#3a5170" name="msapplication-navbutton-color">
+    <!-- iOS Safari -->
+    <meta content="#3a5170" name="apple-mobile-web-app-status-bar-style">
+    <!-- Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b3ce3de160.js" crossorigin="anonymous"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/google-translate-styles.css">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>3Missouri Department of Revenue</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page-container">
+        <!-- <?php include 'php/header.php';?> -->
+        <div class="formOverlay hide col-12" id="formOverlay"></div>
+        <header class="header" id="header-region" role="banner">
+            <div class="row">
+                <div class="col-sm-12" id="header-logo-wrapper">
+                    <a href="#">
+                        <img alt="Missouri Department of Revenue" class="img-responsive" id="logo"
+                            src="./resources/revenue-logo.png" style="display:inline;">
+                    </a>
+                    <div class="landing-search-box-container">
+                        <label for="searchTxt" class="hidden"></label>
+                        <input class="landing-search-box" id="searchTxt" maxlength="512" name="searchTxt"
+                            placeholder="How may we help you?" />
+                        <button id="searchBtn" class="searchBtn" name="searchBtn" type="button" alt="search"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                    <button class="ux-formBtn" id="uxformBtn" onclick="">Share Your Experience!</button>
+                    <!-- UX FEEDBACK FORM -->
+                    <div class="ux-form-area hide col-8" id="uxFormArea">
+                        <div class="formCancelBtn" id="formCancelBtn"><i class="fas fa-times-circle fa-2x"></i></div>
+                        <h2>Tell us about your expeirence!</h2>
+                        <h3>Your opinions matter and help us to improve the website</h3>
+                        <form class="ux-form" id="ux-form" autocomplete="on" name="ux-feedback-form">
+                            <div aria-required="true" class="question_1">
+                                <legend class="legend">Is this your first visit to our website? <span
+                                        class="required">*</span>
+                                </legend>
+                                <small>Error Message</small>
+                                <input type="radio" name="q1_answer" id="q1_yes" value="Yes">
+                                <label for="q1_yes">Yes</label><br>
+                                <input type="radio" name="q1_answer" id="q1_no" value="No">
+                                <label for="q1_no">No</label><br>
+                            </div>
+                            <div aria-required="true" class="question_2">
+                                <legend>What is your primary reason for visiting this website? <span
+                                        class="required">*</span> </legend>
+                                <small>Error Message</small>
+                                <input type="text" name="q2_answer" id="q2" placeholder="Type your answer here"
+                                    class="col-12">
+
+                                <span class="charCount">000/000</span>
+                            </div>
+                            <div aria-required="true" class="question_3">
+                                <legend>Were you able to find what you needed? <span class="required">*</span> </legend>
+                                <small>Error Message</small>
+                                <input type="radio" name="q3_answer" id="q3_yes" value="Yes">
+                                <label for="q3_yes">Yes</label><br>
+                                <input type="radio" name="q3_answer" id="q3_no" value="No">
+                                <label for="q3_no">No</label><br>
+                            </div>
+
+                            <div aria-required="true" class="question_4">
+                                <legend>If you didn't find what you were looking for, please tell us what you were
+                                    looking for: <span class="required">*</span> </legend>
+                                <small>Error Message</small>
+                                <input type="text" name="q4" id="q4" placeholder="Type your answer here" class="col-12">
+                                <span class="charCount" id="charCount">000/000</span>
+                            </div>
+
+                            <div class="form-likert question_5">
+                                <legend aria-required="true">Finding information on this site was...<span
+                                        class="required">*</span></legend>
+                                <small>Error Message</small>
+
+                                <input type="radio" name="q5_answer" value="Very Difficult" id="q5_answer1">
+                                <label for="q5_answer1" class="q5_a1_image"><img class="likert-img"
+                                        src="./resources/VeryDifficult.jpg" alt="Angry Face Icon">Very Difficult</label>
+
+                                <input type="radio" name="q5_answer" value="Difficult" id="q5_answer2">
+                                <label for="q5_answer2" class="q5_a1_image"><img src="./resources/Difficult.jpg"
+                                        alt="Sad Face Icon" class="likert-img">Difficult</label>
+
+                                <input type="radio" name="q5_answer" value="Average" id="q5_answer3">
+                                <label for="q5_answer3" class="q5_a1_image"><img src="./resources/Average.jpg"
+                                        alt="Blank Face Icon" class="likert-img">Average</label>
+
+                                <input type="radio" name="q5_answer" value="Easy" id="q5_answer4">
+                                <label for="q5_answer4" class="q5_a1_image"><img src="./resources/Easy.jpg"
+                                        alt="Smiley Face Icon" class="likert-img">Easy</label>
+
+                                <input type="radio" name="q5_answer" value="Very Easy" id="q5_answer5">
+                                <label for="q5_answer5" class="q5_a1_image"><img src="./resources/VeryHappy.jpg"
+                                        alt="Starry Face Icon" class="likert-img">Very Easy</label>
+
+                            </div>
+                            <div class="form-likert question_6">
+                                <legend aria-required="true">Using this site was... <span class="required">*</span>
+                                </legend>
+                                <small>Error Message</small>
+                                <input type="radio" name="q6_answer" value="Very Difficult" id="q6_answer1">
+                                <label for="q6_answer1" class="q5_a1_image"><img class="likert-img"
+                                        src="./resources/VeryDifficult.jpg" alt="Angry Face Icon">Very Difficult</label>
+
+                                <input type="radio" name="q6_answer" value="Difficult" id="q6_answer2">
+                                <label for="q6_answer2" class="q6_a1_image"><img src="./resources/Difficult.jpg"
+                                        alt="Sad Face Icon" class="likert-img">Difficult</label>
+
+                                <input type="radio" name="q6_answer" value="Average" id="q6_answer3">
+                                <label for="q6_answer3" class="q6_a1_image"><img src="./resources/Average.jpg"
+                                        alt="Blank Face Icon" class="likert-img">Average</label>
+
+                                <input type="radio" name="q6_answer" value="Easy" id="q6_answer4">
+                                <label for="q6_answer4" class="q6_a1_image"><img src="./resources/Easy.jpg"
+                                        alt="Smiley Face Icon" class="likert-img">Easy</label>
+
+                                <input type="radio" name="q6_answer" value="Very Easy" id="q6_answer5">
+                                <label for="q6_answer5" class="q6_a1_image"><img src="./resources/VeryHappy.jpg"
+                                        alt="Starry Face Icon" class="likert-img">Very Easy</label>
+
+                            </div>
+                            <div aria-required="false" class="question_7">
+                                <legend>Please provide any additional comments or suggestions [optional]: </legend>
+                                <small>Error Message</small>
+                                <input type="text" name="q7" id="q7" placeholder="Type your answer here" class="col-12">
+                                <span class="charCount">000/000</span>
+                            </div>
+                            <button type="submit" id="ux-form-submitBtn" class="ux-form-submitBtn">Submit</button>
+                        </form>
+                    </div>
+                    <!-- END UX FEEDBACK FORM -->
+                    <div class="text-right" id="translate_container_large">
+                        <div id="google_translate_element"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg " id="navigation" role="navigation">
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav main-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link " href="./pages/subsite-template.html">Taxation</a>
+                            <a class="nav-item nav-link" href="#">Drivers License</a>
+                            <a class="nav-item nav-link" href="#">Motor Vehicle</a>
+                            <a class="nav-item nav-link" href="#">Resources</a>
+                            <a class="nav-item nav-link" href="#">New to Missouri</a>
+                          
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content where you insert Copy -->
+        <div id="main-content">
+            <div class="row col-10">
+                <div class="main-content-area ">
+                    <!-- IMPORTANT INFORMATION AREA -->
+
+                    <div class="important-info-banner col-12">
+                        <img src="./resources/MVDL_ElectronicNotifications.png" alt="banner picture for home page">
+                        <div class="important-area-text">
+                            <h1>This is where the important info goes.</h1>
+                        </div>
+                    </div>
+                    <div class="find-location-area">
+                        <div class="find-location-content">
+                            <h2>Find your nearest office</h2>
+                            <input type="text" placeholder="Enter your zip code">
+                        </div>
+                    </div>
+
+                    <!-- END IMPORTANT INFORMATION AREA -->
+                    <div class="online-services-area">
+                        <h2>Online Services</h2>
+
+                        <!-- VERTICAL TAB MENU -->
+                        <div class="d-flex vertical-tab-menu">
+                            <div class="nav col-2 d-flex justify-content-center flex-column nav-pills" id="v-pills-tab"
+                                role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-mv-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-mv" type="button" role="tab" aria-controls="v-pills-mv"
+                                    aria-selected="false">Motor Vehicles</button>
+
+                                <button class="nav-link" id="v-pills-dl-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-dl" type="button" role="tab" aria-controls="v-pills-dl"
+                                    aria-selected="false">Drivers License</button>
+
+
+                                <button class="nav-link" id="v-pills-taxation-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-taxation" type="button" role="tab"
+                                    aria-controls="v-pills-taxation" aria-selected="true">Individual Tax</button>
+
+
+
+                                <!-- We should change the name of this last button -->
+                                <button class="nav-link" id="v-pills-bt-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-bt" type="button" role="tab" aria-controls="v-pills-bt"
+                                    aria-selected="false">Business Tax</button>
+                            </div>
+                            <div class="tab-content col-10" id="v-pills-tabContent">
+                                <!-- Motor Vehicle Content Area -->
+                                <div class="tab-pane show active fade" id="v-pills-mv" role="tabpanel"
+                                    aria-labelledby="v-pills-mv-tab">
+                                    <div class="mv-services">
+                                        <!-- ROW 1 -->
+                                        <div class="services-row">
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                        </div>
+                                        <div class="services-row">
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                        </div>
+                                        <div class="services-row">
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                            <button class="service ">
+                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
+                                                <h3 class="service-header">Service Title</h3>
+                                                <p class="service-txt">Text description for service.</p>
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- Drivers License Tax Content Area -->
+                                <div class="tab-pane fade" id="v-pills-dl" role="tabpanel"
+                                    aria-labelledby="v-pills-dl-tab">
+                                    Drivers License Services</div>
+                                <!-- Individual Tax Content Area -->
+                                <div class="tab-pane fade " id="v-pills-taxation" role="tabpanel"
+                                    aria-labelledby="v-pills-taxation-tab">Individual Tax Services</div>
+                                <!-- Business Tax Content Area -->
+                                <div class="tab-pane fade" id="v-pills-bt" role="tabpanel"
+                                    aria-labelledby="v-pills-bt-tab">Business Tax Services</div>
+
+
+
+
+
+                                <div class="tab-pane fade" id="v-pills-oth" role="tabpanel"
+                                    aria-labelledby="v-pills-oth-tab">Motor Vehicle Services</div>
+                            </div>
+                        </div>
+                        <!-- END VERTICAL TAB MENU -->
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- DORA AREA -->
+        <button class="doraBtn" id="doraBtn">
+            <img class="dora-img" src="./resources/Dora Icon.png" alt="">
+            <div class="dora-btn-txt">Chat with Dora on Mobile</div>
+        </button>
+        <!-- DORA INFO AREA -->
+        <div class="container doraInfo hide" id="doraInfo">
+            <div class="doraCancelBtn" id="doraCancelBtn"><i class="fas fa-times-circle fa-2x"></i></div>
+            <div class="dora-btn-txt">Chat with Dora on Mobile</div>
+            <div class="doraTxtInfo">Text: Hi to <span class="dora-btn-txt">59058</span></div>
+            <div class="doraMsgRates">Message & data rates may apply</div>
+            <a href="https://www.mo.gov/privacy-policy/">(Terms & Conditions)</a>
+            <div>--OR--</div>
+            <div class="fbMsgerInfo">Facebook Messenger</div>
+            <a href="https://m.facebook.com/MissouriRevenue/">@MissouriRevenue</a>
+        </div>
+        <!-- END DORA INFO AREA -->
+    </div>
+    <!-- <?include 'php/footer.php';?> -->
+    <div id="footer">
+
+    </div>
+    <script src="./js/global.js"></script>
+    <script src="./js/uxForm.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- Google Translate -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --purple: #202492;
+    --green: #3C8C03;
+    --blue: #0378A6;
+    --yellow: #F2B441;
+    /* text */
+
+
+    /* buttons */
+}
+
+body {
+    background: url(../resources/gray-pattern.png);
+    background-color: lightgray;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+#header-logo-wrapper {
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem 5rem;
+    width: 91%;
+
+}
+
+#header-logo-wrapper img {
+    width: 65%;
+}
+
+.landing-search-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 1rem;
+    right: 0rem;
+    font-size: 1.3rem
+}
+
+.landing-search-box {
+    border: none;
+    border-bottom: 2px solid #000;
+    width: 80%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.landing-search-box:focus {
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.searchBtn {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    bottom: .3rem;
+    right: 2rem;
+}
+
+.searchBtn:hover {
+    transform: scale(1.1);
+}
+
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 0rem;
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0rem;
+}
+
+.nav-item {
+    display: block;
+    background-color: var(--purple);
+    color: #fff;
+    font-weight: 600;
+    height: auto;
+    width: 12.47rem;
+    padding: 1rem .6rem 2.5rem;
+    text-align: center;
+    margin: 0 .3rem;
+    border-top-left-radius: .625rem;
+    border-top-right-radius: .625rem;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-item.active {
+    text-decoration: underline;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    background-color: var(--purple) !important;
+    color: #fff;
+}
+
+
+.ux-formBtn {
+    width: 70%;
+    height: 2.3rem;
+    font-size: 1.2rem;
+    padding: 0 0rem;
+    position: relative;
+    border: none;
+    right: -6.5rem;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+}
+
+.ux-formBtn:hover {
+    transform: scale(1.02);
+}
+
+/* UX FORM */
+
+.hide {
+    visibility: hidden;
+}
+
+.formOverlay {
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    opacity: .5;
+    overflow-x: hidden;
+    left: 0;
+    z-index: 99;
+}
+
+.ux-form-area {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 17%;
+    top: 6%;
+    height: auto;
+    z-index: 100;
+    background-color: var(--blue);
+}
+
+.formCancelBtn {
+    position: absolute;
+    top: -1rem;
+    right: -.5rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.formCancelBtn i,
+.doraCancelBtn i {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.formCancelBtn:hover {
+    transform: scale(1.1);
+}
+
+
+
+small {
+    color: red;
+    display: block;
+    padding-left: 1rem;
+    visibility: hidden;
+}
+
+
+
+
+.ux-form-area h2,
+.ux-form-area h3 {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.ux-form-area h2 {
+    padding: 3rem;
+    font-size: 3rem;
+}
+
+.ux-form-area h3 {
+    padding: 7rem;
+    font-size: 1.5rem;
+}
+
+.ux-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem 5rem 5rem;
+    margin: 12rem 5rem 3rem;
+    font-size: 1.2rem;
+}
+
+form legend {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+form fieldset {
+    margin: 1.5rem 0rem;
+}
+
+form .required {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.form-likert label {
+    width: 17%;
+    display: inline-block;
+    height: auto;
+    background-color: #fff;
+    top: .8rem;
+    text-align: center;
+    font-family: sans-serif, Arial;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    position: relative;
+    left: 3rem;
+    margin-right: .1rem;
+}
+
+.form-likert input[type="radio"] {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.likert-img {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+.form-likert input[type="radio"]:checked+label {
+    background-color: #fff;
+    border-color: var(--purple);
+}
+
+.form-likert input[type="radio"]:focus+label {
+    border: 2px dashed #444;
+}
+
+.question_1 input,
+.question_3 input {
+    margin-top: 1rem;
+}
+
+.question_7 {
+    padding-top: 3rem;
+}
+
+form input[type=text] {
+    padding-bottom: 7rem;
+}
+
+form .charCount {
+    float: right;
+    color: grey;
+    font-size: 1rem;
+}
+
+.ux-form-submitBtn {
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    margin: 0 auto;
+    position: relative;
+    top: 1rem;
+}
+
+.ux-form-submitBtn:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+
+/* END UX FORM */
+
+/* MAIN CONTENT AREA */
+#main-content {
+    padding: 0;
+    position: relative;
+    top: -1.9rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-content-area {
+    text-align: center;
+    background: #fff;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+
+.find-location-content input {
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+
+/* END MAIN CONTENT AREA */
+
+/* DORA'S AREA' */
+
+.doraBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 9.8rem;
+    height: auto;
+    border-radius: 1rem;
+    background-color: var(--yellow);
+    position: fixed;
+    right: .5rem;
+    bottom: .5rem;
+    border: none;
+}
+
+.doraBtn:hover {
+    transform: scale(1.02);
+}
+
+.dora-img {
+    width: 6rem;
+    height: 6rem;
+    padding: .7rem .5rem .5rem;
+}
+
+.dora-btn-txt {
+    padding: 0rem .6rem 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* DORA INFO AREA */
+.doraInfo .dora-btn-txt {
+    font-size: 1.4rem;
+}
+
+.doraInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    width: 28rem;
+    height: auto;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.doraInfo .formCancelBtn {
+    left: -.5rem;
+}
+
+.doraInfo .doraTxtInfo {
+    padding: .5rem;
+}
+
+.doraInfo a {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.doraCancelBtn {
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+    cursor: pointer;
+}
+
+.doraCancelBtn:hover {
+    transform: scale(1.1);
+}
+
+/* END DORA INFO AREA */
+/* FAQ */
+
+
+/* END FAQ */
+
+
+/* FOOTER */
+
+#footer {
+    background-color: var(--purple);
+    height: 20rem;
+}
+
+/* END FOOTER */

@@ -1,0 +1,134 @@
+.main-content-area {
+    display: flex;
+    position: relative;
+}
+
+.main-page-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.main-page-content h1 {
+    padding: 5.6rem 0;
+    color: #000;
+}
+
+.main-focus-info {
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem .5rem;
+    margin: 2rem 0rem;
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+
+.focus-area img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+
+
+.area-info {
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.area-info h2 {
+    padding: 2rem 0;
+}
+
+.area-info p {
+    padding-bottom: 3rem;
+}
+
+.area1 {
+    margin-top: .5rem;
+    box-shadow: -10px 5px 3px lightgray;
+}
+
+.area2 {
+    margin-top: 5rem;
+    box-shadow: 10px 5px 3px lightgray;
+}
+
+.faq-area {
+    height: auto;
+    background-color: var(--green);
+    padding: 2rem 8rem 8rem;
+}
+
+.faq-area h1 {
+    text-align: center;
+    padding: 3rem 0rem 4rem;
+    color: #fff;
+}
+
+.sidelinks {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 1px solid lightgray;
+
+}
+
+.sidelink-area {
+    height: auto;
+
+}
+
+.find-location-content {
+    padding: 4rem 2rem;
+}
+
+.find-location-content input {
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+.helpful-links-area {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-left: none;
+}
+
+.helpful-links-area h2 {
+    padding: 2rem 0;
+}
+
+.helpful-links-list {
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+}
+
+.helpful-links a {
+    padding: .5rem;
+}
+
+.subscribe-area {
+    height: 19.8rem;
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 188, 255);
+}

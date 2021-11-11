@@ -1,0 +1,135 @@
+.important-info-banner {
+    background-color: var(--purple);
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 4rem 1rem 4rem 0rem;
+}
+
+.important-info-banner img {
+    width: 50%;
+    height: auto;
+}
+
+.important-area-text {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    width: 50%;
+    height: auto;
+    margin: 2rem 3rem;
+}
+
+.important-area-text h1 {
+    padding: 1rem;
+}
+
+.find-location-area {
+    background-color: var(--purple);
+    color: #fff;
+    border-top: 1px solid rgb(34, 33, 33);
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+.find-location-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-location-area h2 {
+    font-size: 1.3rem;
+    padding: 2rem 1rem 1rem;
+    font-weight: 700;
+}
+
+.find-location-content input {
+    text-align: center;
+    margin-left: 1rem;
+}
+
+/* Vertical Tab Content */
+.online-services-area {
+    padding: 5rem 0;
+
+}
+
+.online-services-area h2 {
+    padding: 2rem 0;
+}
+
+
+.vertical-tab-menu {
+    position: relative;
+    left: 1rem;
+    padding: 0 4rem;
+}
+
+.nav button {
+    height: 6rem;
+    margin: .2rem;
+    width: 85%;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: var(--purple);
+    z-index: 1;
+}
+
+#v-pills-tab .nav-link:not(.active) {
+    background-color: var(--purple) !important;
+}
+
+#v-pills-tab .nav-link.active {
+    background-color: #fff;
+    font-weight: 600;
+    color: #000;
+    width: 90%;
+}
+
+#v-pills-tab .nav-link.active:hover {
+    background-color: #fff !important;
+
+}
+
+.tab-pane {
+    background-color: #fff;
+    height: auto;
+}
+
+.tab-content {
+    margin-left: -1.7rem;
+    border: .5px solid rgb(224, 224, 224);
+
+}
+
+/* Vertical Content Services */
+
+.services-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.service{
+    background-color: #fff;
+    border: none;
+}
+.service img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.service p {
+    font-size: 1rem;
+}
