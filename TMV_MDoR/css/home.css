@@ -5,7 +5,13 @@
     display: flex;
     padding: 4rem 1rem 4rem 0rem;
 }
-
+.important-info-banner h1{
+    position: absolute;
+    top: 14%;
+    left: 13%;
+    color: white;
+    font-size: 4rem;
+}
 .important-info-banner img {
     width: 50%;
     height: auto;
@@ -21,12 +27,13 @@
     margin: 2rem 3rem;
 }
 
-.important-area-text h1 {
+.important-area-text h2 {
     padding: 1rem;
+    font-size: 1.7rem;
 }
 
 .find-location-area {
-    background-color: var(--purple);
+    background-color: var(--green);
     color: #fff;
     border-top: 1px solid rgb(34, 33, 33);
     width: 100%;
@@ -132,4 +139,25 @@
 
 .service p {
     font-size: 1rem;
+}
+
+/* New to Missouri */
+.new-to-missouri .important-info-banner{
+    justify-content: center;
+    align-items: center;
+}
+.new-to-missouri .important-info-banner img{
+    width: 60%;
+}
+
+.faq-area {
+    height: auto;
+    background-color: #fff;
+    padding: 2rem 8rem 8rem;
+}
+
+.faq-area h1 {
+    text-align: center;
+    padding: 3rem 0rem 4rem;
+    
 }
