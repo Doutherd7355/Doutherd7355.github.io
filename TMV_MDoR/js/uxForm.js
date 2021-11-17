@@ -4,6 +4,8 @@ const formCancelBtn = document.getElementById("formCancelBtn");
 const uxFormArea = document.getElementById("uxFormArea");
 const uxForm = document.getElementById("ux-form");
 const formOverlay = document.getElementById("formOverlay");
+const input = document.querySelectorAll('input');
+const small = document.querySelectorAll('small');
 
 // Event Listeners
 uxformBtn.addEventListener('click', () => {
@@ -13,6 +15,7 @@ uxformBtn.addEventListener('click', () => {
 formCancelBtn.addEventListener('click', () => {
     uxFormArea.classList.add('hide');
     formOverlay.classList.add('hide');
+   
 });
 
 
@@ -25,8 +28,7 @@ formCancelBtn.addEventListener('click', () => {
 // const inputQuest5 = document.getElementsByName('q5_answer');
 // const inputQuest6 = document.getElementsByName('q6_answer');
 // const inputQuest7 = document.getElementsByName('q7_answer');
-const input = document.querySelectorAll('input');
-const small = document.querySelectorAll('small');
+
 
 
 // console.log(small);
@@ -99,6 +101,7 @@ function checkSixth() {
         return false;
     } else if (input[11].checked || input[12].checked || input[13].checked || input[14].checked || input[15].checked) {
         return true;
+        
     };
 };
 

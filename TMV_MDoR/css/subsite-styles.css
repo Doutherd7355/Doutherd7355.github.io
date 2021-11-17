@@ -28,9 +28,9 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 100%;
-    padding: 2.7rem 1.5rem;
-    margin: 1rem 0rem;
+    height: auto;
+    padding: 2rem 1.5rem;
+    margin: .5rem 0rem;
     background-color: var(--purple);
     border-radius: 5px;
 }
@@ -38,16 +38,24 @@
 .focus-area img {
     width: 250px;
     height: 250px;
-  
+    z-index: 5;
+    position: absolute;
 }
 
-.drivers-license .area1 img{
+.area2 img{
+ right: 25rem;
+}
+
+
+.drivers-license .area1 img {
     width: 350px;
     height: 250px;
+    padding: 1rem;
     border-radius: .8rem;
+    left: 5rem;
 }
 
-.motor-vehicle .area2 .area-info{
+.motor-vehicle .area2 .area-info {
     width: 60%;
     position: relative;
     right: 9.7rem;
@@ -66,11 +74,28 @@
     height: auto;
     background-color: #fff;
     padding: 1rem;
+    z-index: 1;
 }
 
-.area-info h2 {
+.info-txt{
+    width: 50%;
+    float: right;
+    margin: 1rem;
+    top: 1rem;
+}
+
+.info-txt2{
+    width: 50%;
+    float: left;
+    margin: 2rem;
+
+}
+
+.info-txt p, .info-txt2 p{
+    text-align: justify;
     padding: 2rem 0;
 }
+
 
 .area-info p {
     padding-bottom: 3rem;
@@ -149,7 +174,7 @@
     text-decoration: none;
 }
 
-.helpful-links a:hover{
+.helpful-links a:hover {
     text-decoration: underline;
 }
 
@@ -161,5 +186,3 @@
     align-items: center;
     background-color: rgb(105, 188, 255);
 }
-
-

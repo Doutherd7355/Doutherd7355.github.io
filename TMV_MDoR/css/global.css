@@ -192,6 +192,7 @@ body {
 small {
     color: red;
     display: block;
+    position: relative;
     padding-left: 1rem;
     visibility: hidden;
 }
