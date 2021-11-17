@@ -58,7 +58,7 @@
                         <h2>Tell us about your expeirence!</h2>
                         <h3>Your opinions matter and help us to improve the website</h3>
                         <form class="ux-form" id="ux-form" autocomplete="on" name="ux-feedback-form">
-                            <div aria-required="true" class="question_1">
+                            <fieldset aria-required="true" class="question_1">
                                 <legend class="legend">Is this your first visit to our website? <span
                                         class="required">*</span>
                                 </legend>
@@ -67,8 +67,8 @@
                                 <label for="q1_yes">Yes</label><br>
                                 <input type="radio" name="q1_answer" id="q1_no" value="No">
                                 <label for="q1_no">No</label><br>
-                            </div>
-                            <div aria-required="true" class="question_2">
+                            </fieldset>
+                            <fieldset aria-required="true" class="question_2">
                                 <legend>What is your primary reason for visiting this website? <span
                                         class="required">*</span> </legend>
                                 <small>Error Message</small>
@@ -76,25 +76,25 @@
                                     class="col-12">
 
                                 <span class="charCount">000/000</span>
-                            </div>
-                            <div aria-required="true" class="question_3">
+                            </fieldset>
+                            <fieldset aria-required="true" class="question_3">
                                 <legend>Were you able to find what you needed? <span class="required">*</span> </legend>
                                 <small>Error Message</small>
                                 <input type="radio" name="q3_answer" id="q3_yes" value="Yes">
                                 <label for="q3_yes">Yes</label><br>
                                 <input type="radio" name="q3_answer" id="q3_no" value="No">
                                 <label for="q3_no">No</label><br>
-                            </div>
+                            </fieldset>
 
-                            <div aria-required="true" class="question_4">
+                            <fieldset aria-required="true" class="question_4">
                                 <legend>If you didn't find what you were looking for, please tell us what you were
                                     looking for: <span class="required">*</span> </legend>
                                 <small>Error Message</small>
                                 <input type="text" name="q4" id="q4" placeholder="Type your answer here" class="col-12">
                                 <span class="charCount" id="charCount">000/000</span>
-                            </div>
+                            </fieldset>
 
-                            <div class="form-likert question_5">
+                            <fieldset class="form-likert question_5">
                                 <legend aria-required="true">Finding information on this site was...<span
                                         class="required">*</span></legend>
                                 <small>Error Message</small>
@@ -119,8 +119,8 @@
                                 <label for="q5_answer5" class="q5_a1_image"><img src="./resources/VeryHappy.jpg"
                                         alt="Starry Face Icon" class="likert-img">Very Easy</label>
 
-                            </div>
-                            <div class="form-likert question_6">
+                            </fieldset>
+                            <fieldset class="form-likert question_6">
                                 <legend aria-required="true">Using this site was... <span class="required">*</span>
                                 </legend>
                                 <small>Error Message</small>
@@ -144,13 +144,13 @@
                                 <label for="q6_answer5" class="q6_a1_image"><img src="./resources/VeryHappy.jpg"
                                         alt="Starry Face Icon" class="likert-img">Very Easy</label>
 
-                            </div>
-                            <div aria-required="false" class="question_7">
+                            </fieldset>
+                            <fieldset aria-required="false" class="question_7">
                                 <legend>Please provide any additional comments or suggestions [optional]: </legend>
                                 <small>Error Message</small>
                                 <input type="text" name="q7" id="q7" placeholder="Type your answer here" class="col-12">
                                 <span class="charCount">000/000</span>
-                            </div>
+                            </fieldset>
                             <button type="submit" id="ux-form-submitBtn" class="ux-form-submitBtn">Submit</button>
                         </form>
                     </div>
@@ -241,54 +241,71 @@
                                     <div class="mv-services">
                                         <!-- ROW 1 -->
                                         <div class="services-row">
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/mv_inquiries_icon.png"
+                                                    alt="Motor Vehicle inquiries icon">
+                                                <h3 class="service-header">Motor Vehicle Inquiries</h3>
+                                                <p class="service-txt">Check the status of a pending application or
+                                                    request.</p>
                                             </button>
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/sales_tax_icon.png" alt="sales tax icon">
+                                                <h3 class="service-header">Sales Tax Calculator</h3>
+                                                <p class="service-txt">Estimate taxes for your newly purchased vehicle.
+                                                </p>
                                             </button>
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
-                                            </button>
-                                        </div>
-                                        <div class="services-row">
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
-                                            </button>
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
-                                            </button>
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/renew_license_icon.png"
+                                                    alt="license renewal icon">
+                                                <h3 class="service-header">License Plate Renewal</h3>
+                                                <p class="service-txt">Click here to renew your license plate.</p>
                                             </button>
                                         </div>
                                         <div class="services-row">
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/personalize_reserve_lp_icon.png"
+                                                    alt="license plate renewal icon">
+                                                <h3 class="service-header">License Plate Personalization</h3>
+                                                <p class="service-txt">Personalize & Reserve License Plates.</p>
                                             </button>
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/dealer_sales_icon.png"
+                                                    alt="dealer sales reporting icon">
+                                                <h3 class="service-header">Dealer Sales Reporting</h3>
+                                                <p class="service-txt">Approved motor vehicle and boat dealers, file
+                                                    your sales here.</p>
                                             </button>
-                                            <button class="service ">
-                                                <img src="./resources/cat-2934720_1920.jpg" alt="">
-                                                <h3 class="service-header">Service Title</h3>
-                                                <p class="service-txt">Text description for service.</p>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/child_support_lein_icon.png"
+                                                    alt="child support lien icon">
+                                                <h3 class="service-header">Child Support Lien List</h3>
+                                                <p class="service-txt">Check here for Vehicle Child Support Liens.</p>
+                                            </button>
+                                        </div>
+                                        <div class="services-row">
+                                            <button class="service col-4">
+                                                <img class="os-hi_vert"
+                                                    src="./resources/os_icons/safety_inspection_icon.png"
+                                                    alt="safety inspection icon">
+                                                <h3 class="service-header">Safety Inspection Station Locations</h3>
+                                                <p class="service-txt">Find an official inspection station in your area.
+                                                </p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/lien_notice_icon.png"
+                                                    alt="Lien notice icon">
+                                                <h3 class="service-header">Notice of Lien Filing</h3>
+                                                <p class="service-txt">Approved vehicle dealers and lienholders, check
+                                                    file notices of lien.
+                                                </p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/mv_record_searches_icon.png"
+                                                    alt="Motor Vehicle Record Searches icon">
+                                                <h3 class="service-header">Motor Vehicle Record Searches
+                                                </h3>
+                                                <p class="service-txt">Approved vehicle dealers and lienholders, search
+                                                    for title records.</p>
                                             </button>
                                         </div>
 
@@ -298,20 +315,243 @@
                                 <!-- Drivers License Tax Content Area -->
                                 <div class="tab-pane fade" id="v-pills-dl" role="tabpanel"
                                     aria-labelledby="v-pills-dl-tab">
-                                    Drivers License Services</div>
+                                    <div class="dl-services">
+                                        <!-- ROW 1 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/license_reinstatement_icon.png"
+                                                    alt="License Reinstatement Icon">
+                                                <h3 class="service-header">License Reinstatement</h3>
+                                                <p class="service-txt">Pay your driver license reinstatement fees
+                                                    online.</p>
+                                            </button>
+                                            <button class="service col-4 ">
+                                                <img src="./resources/os_icons/record_sales_icon.png"
+                                                    alt="record sales icon">
+                                                <h3 class="service-header">Record Sales</h3>
+                                                <p class="service-txt">Make an online driver license record purchase</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/electronic_renewal_icon.png"
+                                                    alt="electronic renewal icon">
+                                                <h3 class="service-header"> Renewal e-Reminders</h3>
+                                                <p class="service-txt">Get e-notifications for vehicle and license
+                                                    renewal transactions.</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- Individual Tax Content Area -->
                                 <div class="tab-pane fade " id="v-pills-taxation" role="tabpanel"
-                                    aria-labelledby="v-pills-taxation-tab">Individual Tax Services</div>
+                                    aria-labelledby="v-pills-taxation-tab">
+                                    <div class="it-services">
+                                        <!-- ROW 1 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/efile_fed_state_taxes_icon.png"
+                                                    alt="electronic renewal icon">
+                                                <h3 class="service-header">E-File Federal & State Taxes</h3>
+                                                <p class="service-txt"> File your federal and state income tax returns
+                                                    online.</p>
+                                            </button>
+                                            <button class="service col-4 ">
+                                                <img src="./resources/os_icons/ind_income_check_icon.png"
+                                                    alt="check individual return icon">
+                                                <h3 class="service-header">Individual Return Status</h3>
+                                                <p class="service-txt">Check here to see your tax refund status.</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/invid_tax_online_icon.png"
+                                                    alt="pay individual income tax online icon">
+                                                <h3 class="service-header">Individual Tax Payment</h3>
+                                                <p class="service-txt"> Pay your tax balance using your credit card or
+                                                    an e-check.</p>
+                                            </button>
+
+
+                                        </div>
+                                        <!-- ROW 2 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/sales_tax_icon.png"
+                                                    alt="electronic renewal icon">
+                                                <h3 class="service-header">Individual Tax Calculator</h3>
+                                                <p class="service-txt"> Estimate of your Missouri tax liability.</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/electronic_renewal_icon.png"
+                                                    alt="License Reinstatement Icon">
+                                                <h3 class="service-header">Tax Form Selector</h3>
+                                                <p class="service-txt">Find the tax forms that are right for you.</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/returned_check_icon.png"
+                                                    alt="returned check icon">
+                                                <h3 class="service-header">Returned Refund Checks</h3>
+                                                <p class="service-txt">Inquire about returned tax refund checks.</p>
+                                            </button>
+
+                                        </div>
+                                        <!-- ROW 3 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/sales_tax_icon.png"
+                                                    alt="Additions and Interest Calculator">
+                                                <h3 class="service-header">Tax Additions & Interest Calculator</h3>
+                                                <p class="service-txt">Estimate your total liability in taxes, interest,
+                                                    and additions using this handy calculator.</p>
+                                            </button>
+
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/mv_record_searches_icon.png"
+                                                    alt="lien search icon">
+                                                <h3 class="service-header">Lien Search</h3>
+                                                <p class="service-txt">Individuals and businesses that have not paid
+                                                    their taxes may search for a certificate of lien here.</p>
+                                            </button>
+                                            <button class="service col-4 ">
+                                                <img src="./resources/os_icons/record_sales_icon.png"
+                                                    alt="record sales icon">
+                                                <h3 class="service-header">1099-G Inquiry</h3>
+                                                <p class="service-txt">Reports the amount of refunds, credits, and other
+                                                    offsets of state income tax for your federal tax return.</p>
+                                            </button>
+                                        </div>
+
+                                        <!-- ROW 4 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/military_tax_icon.png"
+                                                    alt="military return icon">
+                                                <h3 class="service-header">No Return Required- Military Online Form</h3>
+                                                <p class="service-txt">Notify the Missouri Department of Revenue that
+                                                    you are Military Personnel not required to file a Missouri income
+                                                    tax return.</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/voluntary_disclosure_icon.png"
+                                                    alt="voluntary disclosure Icon">
+                                                <h3 class="service-header">Voluntary Disclosure Program</h3>
+                                                <p class="service-txt">Complete a request for a voluntary disclosure.
+                                                </p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/property_tax_icon.png"
+                                                    alt="property tax icon">
+                                                <h3 class="service-header">Property Tax Credit Filing</h3>
+                                                <p class="service-txt">Learn more about who qualifies for the Property
+                                                    Tax Credit, how to apply, and what documents are required to receive
+                                                    the credit.</p>
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
                                 <!-- Business Tax Content Area -->
                                 <div class="tab-pane fade" id="v-pills-bt" role="tabpanel"
-                                    aria-labelledby="v-pills-bt-tab">Business Tax Services</div>
+                                    aria-labelledby="v-pills-bt-tab">
 
+                                    <div class="bt-services">
+                                        <!-- ROW 1 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/register_business_icon.png"
+                                                    alt="electronic renewal icon">
+                                                <h3 class="service-header">Register a New Business</h3>
+                                                <p class="service-txt">Register your new business online for a variety
+                                                    of tax types.</p>
+                                            </button>
+                                            <button class="service col-4 ">
+                                                <img src="./resources/os_icons/returned_check_icon.png"
+                                                    alt="check individual return icon">
+                                                <h3 class="service-header">Pay Business Taxes Online</h3>
+                                                <p class="service-txt">Click here to pay your business tax online.</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/pay_plan_agreement_icon.png"
+                                                    alt="pay individual income tax online icon">
+                                                <h3 class="service-header">Internet Install Agreement</h3>
+                                                <p class="service-txt">Apply to pay business tax debt in smaller, more
+                                                    manageable amounts.</p>
+                                            </button>
+                                        </div>
+                                        <!-- ROW 2 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/sales_tax_icon.png"
+                                                    alt="electronic renewal icon">
+                                                <h3 class="service-header">Tax & Interest Additions Calculator</h3>
+                                                <p class="service-txt">Estimate your total liability in taxes, interest,
+                                                    and additions using this calculator.</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/no_tax_icon.png"
+                                                    alt="no tax icon">
+                                                <h3 class="service-header">Online License No Tax Due System</h3>
+                                                <p class="service-txt"> Political subdivisions, state agencies, and
+                                                    business owners can quickly determine if a business has no tax due.
+                                                </p>
+                                            </button>
+                                            <button class="service col-4 ">
+                                                <img src="./resources/os_icons/invid_tax_online_icon.png"
+                                                    alt="Document with percent sign icon">
+                                                <h3 class="service-header">File Sales/Use or Witholding Tax</h3>
+                                                <p class="service-txt">Businesses registered with the Department to
+                                                    collect and remit sales or use tax can file an electronic return.
+                                                </p>
+                                            </button>
+                                          
+                                        </div>
+                                        <!-- ROW 3 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/no_tax_due_icon.png"
+                                                    alt="no tax due icon">
+                                                <h3 class="service-header">Bond Refund & Release</h3>
+                                                <p class="service-txt">Have your Cash Bond refunded or your Surety Bond,
+                                                    Irrevocable Letter of Credit, or Certificate of Deposit released.
+                                                </p>
+                                            </button>
+                                            <button class="service col-4 ">
+                                                <img src="./resources/os_icons/motor_fuel_icon.png"
+                                                    alt="motor fuel icon">
+                                                <h3 class="service-header">Motor Fuel Licensee List</h3>
+                                                <p class="service-txt">See information about businesses licensed for
+                                                    motor fuel activities.</p>
+                                            </button>
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/mv_record_searches_icon.png"
+                                                    alt="pay individual income tax online icon">
+                                                <h3 class="service-header">Lien Search</h3>
+                                                <p class="service-txt">Individuals and businesses that have not paid
+                                                    their taxes may search for a certificate of lien here.</p>
+                                            </button>
+                                        </div>
+                                        <!-- ROW 4 -->
+                                        <div class="services-row col-12">
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/tobacco_icon.png"
+                                                    alt="tobacco icon">
+                                                <h3 class="service-header">Missouri Tobacco Directory</h3>
+                                                <p class="service-txt">See a list of tobacco manufacturers and brand
+                                                    families that have been approved as meeting Missouri’s certification
+                                                    requirements.</p>
+                                            </button>
+                                           
+                                            <button class="service col-4">
+                                                <img src="./resources/os_icons/overpaid_withholding_icon.png"
+                                                    alt="withholding online icon">
+                                                <h3 class="service-header">Witholding Tax Overpayments</h3>
+                                                <p class="service-txt">Access the Online Credit Inquiry System to
+                                                    determine if an overpayment exists on your Missouri sales and/or
+                                                    withholding tax account.</p>
+                                            </button>
+                                           
 
-
-
-
-                                <div class="tab-pane fade" id="v-pills-oth" role="tabpanel"
-                                    aria-labelledby="v-pills-oth-tab">Motor Vehicle Services</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- END VERTICAL TAB MENU -->
