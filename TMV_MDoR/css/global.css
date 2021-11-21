@@ -340,6 +340,44 @@ form .charCount {
     margin-top: .5rem;
 }
 
+/* Faq area on subsites */
+.faq-area {
+    height: auto;
+    background-color: var(--green);
+    padding: 2rem 8rem 8rem;
+}
+
+.faq-area h1 {
+    text-align: center;
+    padding: 3rem 0rem 4rem;
+    color: #fff;
+}
+
+.accordion-header button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.2rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--purple);
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-body {
+    padding: 3rem 5rem;
+}
+
+.main-faq-info {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.accordion-body h3 {
+    padding-top: 1.5rem;
+}
+/* End faq area */
 
 /* END MAIN CONTENT AREA */
 
@@ -492,6 +530,10 @@ footer a{
     flex-direction: column;
 }
 
+.footer-nav-links{
+    margin-top: 3rem;
+}
+
 .footer-nav-links a{
     margin: .5rem 0rem;
     text-decoration: none;
@@ -508,6 +550,7 @@ footer a{
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .other-info img {

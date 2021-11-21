@@ -1,0 +1,41 @@
+.important-info-banner{
+    color: #fff;
+}
+
+.missouri-gov, .acting-director{
+    padding: 1rem;
+    position: relative;
+}
+
+.missouri-gov img, .acting-director img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.missouri-gov{
+    right: -17rem;
+}
+
+.acting-director{
+    right: 17rem;
+}
+
+.missouri-gov h2, .acting-director h2{
+   font-size: 1.5rem;
+   padding-top: .5rem;
+}
+
+.missouri-gov h3, .acting-director h3{
+    font-size: 1.2rem;
+ }
+
+ .welcome-banner{
+     width: 100%;
+     padding: 0;
+ }
+
+ .faq-area h1{
+     color: #000;
+ }
