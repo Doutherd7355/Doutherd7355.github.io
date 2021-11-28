@@ -356,7 +356,8 @@ form .charCount {
 .accordion-header button {
     font-size: 1.2rem;
     font-weight: 600;
-    padding: 1.2rem;
+    padding: 1.2rem 1.7rem;
+    line-height: 2rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -377,6 +378,16 @@ form .charCount {
 .accordion-body h3 {
     padding-top: 1.5rem;
 }
+
+.more_faq{
+    padding: 2rem 6rem;
+    text-align: center;
+}
+
+.more_faq a{
+    color: #fff;
+}
+
 /* End faq area */
 
 /* END MAIN CONTENT AREA */
@@ -486,7 +497,7 @@ footer {
     color: #fff;
 }
 
-footer a{
+footer a {
     color: #fff;
 }
 
@@ -503,7 +514,9 @@ footer a{
     font-size: 1.8rem;
 }
 
-.dl-contact, .mv-contact, .taxation-contact{
+.dl-contact,
+.mv-contact,
+.taxation-contact {
     padding: .8rem 0rem;
 }
 
@@ -521,7 +534,7 @@ footer a{
 .links-info {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .footer-nav-links,
@@ -530,16 +543,16 @@ footer a{
     flex-direction: column;
 }
 
-.footer-nav-links{
+.footer-nav-links {
     margin-top: 3rem;
 }
 
-.footer-nav-links a{
+.footer-nav-links a {
     margin: .5rem 0rem;
     text-decoration: none;
 }
 
-.footer-nav-links a:hover{
+.footer-nav-links a:hover {
     text-decoration: underline;
     color: #fff;
 }
