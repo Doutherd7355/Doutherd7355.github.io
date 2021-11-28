@@ -33,6 +33,11 @@
     margin: .5rem 0rem;
     background-color: var(--purple);
     border-radius: 5px;
+    
+}
+
+ .main-focus-info a{
+    color: #000;
 }
 
 .focus-area img {
