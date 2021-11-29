@@ -1,41 +1,90 @@
-.important-info-banner{
+.main-content-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.important-info-banner {
     color: #fff;
 }
 
-.missouri-gov, .acting-director{
+.missouri-gov,
+.acting-director {
     padding: 1rem;
     position: relative;
 }
 
-.missouri-gov img, .acting-director img{
+.missouri-gov img,
+.acting-director img {
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: .6rem;
     margin: 0;
 }
 
-.missouri-gov{
+.missouri-gov {
     right: -17rem;
 }
 
-.acting-director{
+.acting-director {
     right: 17rem;
 }
 
-.missouri-gov h2, .acting-director h2{
-   font-size: 1.5rem;
-   padding-top: .5rem;
+.missouri-gov h2,
+.acting-director h2 {
+    font-size: 1.5rem;
+    padding-top: .5rem;
 }
 
-.missouri-gov h3, .acting-director h3{
+.missouri-gov h3,
+.acting-director h3 {
     font-size: 1.2rem;
- }
+}
 
- .welcome-banner{
-     width: 100%;
-     padding: 0;
- }
+.welcome-banner {
+    width: 100%;
+    padding: 0;
+}
 
- .faq-area h1{
-     color: #000;
- }
+.mission-about{
+    padding: 5rem;
+}
+.mission-about img{
+   width: 100%;
+   margin: 5rem 0 2.5rem;
+}
+
+.mission-about p{
+    padding: 1.8rem 4rem;
+    text-align: left;
+}
+.find-location-content {
+    flex-direction: column;
+}
+
+.sidelinks {
+    padding: 0;
+}
+
+.faq-area h1 {
+    color: #000;
+}
+
+.faq-area {
+    height: auto;
+    background-color: var(--green);
+    padding: 2rem 8rem 8rem;
+}
+
+.nm-intro {
+    text-align: left;
+}
+
+.accordion{
+    text-align: left;
+}
