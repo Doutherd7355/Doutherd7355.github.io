@@ -225,6 +225,7 @@ small {
     padding: 2rem 5rem 5rem;
     margin: 12rem 5rem 3rem;
     font-size: 1.2rem;
+  
 }
 
 form legend {
@@ -344,7 +345,7 @@ form .charCount {
 .faq-area {
     height: auto;
     background-color: var(--green);
-    padding: 2rem 8rem 8rem;
+    padding: 2rem 8rem 4rem;
 }
 
 .faq-area h1 {
@@ -498,6 +499,7 @@ footer {
     background-color: var(--purple);
     height: auto;
     color: #fff;
+    width: 100%;
 }
 
 footer a {
@@ -572,8 +574,12 @@ footer a {
 .other-info img {
     height: 100px;
     width: 140px;
-
     margin: 1rem;
 }
 
+
+.tax-footer{
+    margin: 0;
+    padding: 0;
+}
 /* END FOOTER */

@@ -1,3 +1,7 @@
+
+.container-fluid{
+    padding: 0;
+}
 .main-content-area {
     display: flex;
     flex-direction: column;
@@ -25,15 +29,16 @@
     width: 100%;
     height: auto;
     padding: .6rem;
-    margin: 0;
+    margin: 0 auto;
+    
 }
 
 .missouri-gov {
-    right: -17rem;
+    right: -14rem;
 }
 
 .acting-director {
-    right: 17rem;
+    right: 14rem;
 }
 
 .missouri-gov h2,
@@ -48,7 +53,7 @@
 }
 
 .welcome-banner {
-    width: 100%;
+    width: 90%;
     padding: 0;
 }
 
@@ -69,14 +74,16 @@
     flex-direction: column;
 }
 
-.sidelinks {
-    padding: 0;
+.nm-sidelinks .find-location-content {
+    padding: 4rem 2rem;
+    background-color: var(--green);
+    color: #fff;
 }
 /* New to Missouri */
 .new-to-missouri .important-info-banner{
     justify-content: center;
     align-items: center;
-    width: 101%;
+    width: 100%;
     
 }
 .new-to-missouri .important-info-banner img{
@@ -86,7 +93,7 @@
 .faq-area {
     height: auto;
     background-color: #fff;
-    padding: 2rem 8rem 8rem;
+    padding: 2rem 8rem 2rem;
 }
 
 .faq-area h1 {
@@ -98,7 +105,7 @@
 
 
 .faq-area {
-    width: 101%;
+    width: 100%;
     height: auto;
     background-color: var(--green);
     padding: 2rem 8rem 8rem;

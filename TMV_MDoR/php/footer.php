@@ -24,21 +24,21 @@
 
                 </div>
                 <div class="social-media">
-                    <a href="#"><img src="./resources/iconfinder_facebook_social media_social_317727.svg"
+                    <a href="#"><img src="../resources/iconfinder_facebook_social media_social_317727.svg"
                             alt="facebook icon"></a>
-                    <a href=""><img src="./resources/iconfinder_social media_tweet_twitter_social_317720.svg"
+                    <a href=""><img src="../resources/iconfinder_social media_tweet_twitter_social_317720.svg"
                             alt="twitter Icon"></a>
-                    <a href=""><img src="./resources/iconfinder_app_instagram_logo_media_popular_social_3225191.svg"
+                    <a href=""><img src="../resources/iconfinder_app_instagram_logo_media_popular_social_3225191.svg"
                             alt="instagram icon"></a>
                 </div>
             </div>
             <div class="footer-info links-info col-3">
                 <div class="footer-nav-links">
-                    <a href="./index.html">Home</a>
-                    <a href="./pages/taxation.html">Taxation</a>
-                    <a href="./pages/drivers-license.html">Drivers License</a>
-                    <a href="./pages/motor-vehicle.html">Motor Vehicle</a>
-                    <a href="./pages/new-missouri.html">New to Missouri</a>
+                    <a href="../index.html">Home</a>
+                    <a href="../pages/taxation.html">Taxation</a>
+                    <a href="../pages/drivers-license.html">Drivers License</a>
+                    <a href="../pages/motor-vehicle.html">Motor Vehicle</a>
+                    <a href="../pages/new-missouri.html">New to Missouri</a>
                     <a href="#">Find an Agency</a>
                     <a href="#">Career Opportunities</a>
                     <a href="#">News Releases</a>
@@ -47,8 +47,8 @@
                 </div>
             </div>
             <div class="footer-info other-info col-4">
-                <a href=""><img src="./resources/save-life-footer.png" alt="save a life donor link"></a>
-                <a href=""><img src="./resources/mogov_logo_footer.png" alt="missouri gov website portal"></a>
+                <a href="#"><img src="../resources/save-life-footer.png" alt="save a life donor link"></a>
+                <a href="#"><img src="../resources/mogov_logo_footer.png" alt="missouri gov website portal"></a>
             </div>
         </div>
     </footer>
