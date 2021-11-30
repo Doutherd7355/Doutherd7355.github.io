@@ -11,6 +11,7 @@
 
 .important-info-banner {
     color: #fff;
+    width: auto;
 }
 
 .missouri-gov,
@@ -53,6 +54,7 @@
 
 .mission-about{
     padding: 5rem;
+
 }
 .mission-about img{
    width: 100%;
@@ -70,15 +72,42 @@
 .sidelinks {
     padding: 0;
 }
-
-.faq-area h1 {
-    color: #000;
+/* New to Missouri */
+.new-to-missouri .important-info-banner{
+    justify-content: center;
+    align-items: center;
+    width: 101%;
+    
+}
+.new-to-missouri .important-info-banner img{
+    width: 60%;
 }
 
 .faq-area {
     height: auto;
+    background-color: #fff;
+    padding: 2rem 8rem 8rem;
+}
+
+.faq-area h1 {
+    text-align: center;
+    padding: 3rem 0rem 4rem;
+    color: #000;
+    
+}
+
+
+.faq-area {
+    width: 101%;
+    height: auto;
     background-color: var(--green);
     padding: 2rem 8rem 8rem;
+}
+
+.faq-area h1 {
+    text-align: center;
+    padding: 3rem 0rem 4rem;
+    color: #fff;
 }
 
 .nm-intro {
@@ -87,4 +116,15 @@
 
 .accordion{
     text-align: left;
+}
+.accordion h4{
+    padding: 3rem 0 1rem;
+}
+.tax-rate-img{
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.xtra-space{
+    padding-top: 1rem;
 }

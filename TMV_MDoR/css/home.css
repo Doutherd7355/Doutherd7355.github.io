@@ -155,23 +155,3 @@
     font-size: 1rem;
 }
 
-/* New to Missouri */
-.new-to-missouri .important-info-banner{
-    justify-content: center;
-    align-items: center;
-}
-.new-to-missouri .important-info-banner img{
-    width: 60%;
-}
-
-.faq-area {
-    height: auto;
-    background-color: #fff;
-    padding: 2rem 8rem 8rem;
-}
-
-.faq-area h1 {
-    text-align: center;
-    padding: 3rem 0rem 4rem;
-    
-}

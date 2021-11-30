@@ -380,7 +380,10 @@ form .charCount {
 }
 
 .more_faq{
-    padding: 2rem 6rem;
+    padding: 2.5rem 10rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 180%;
     text-align: center;
 }
 

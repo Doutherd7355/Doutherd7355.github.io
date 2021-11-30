@@ -33,10 +33,11 @@
     margin: .5rem 0rem;
     background-color: var(--purple);
     border-radius: 5px;
-    
+
 }
 
-.taxation-focus .info-txt, .taxation-focus .info-txt2{
+.taxation-focus .info-txt,
+.taxation-focus .info-txt2 {
     color: #000;
 }
 
@@ -69,7 +70,8 @@
     left: 5rem;
 }
 
-.taxation .area2 img, .drivers-license .area2 img {
+.taxation .area2 img,
+.drivers-license .area2 img {
     right: 25rem;
 }
 
@@ -116,6 +118,58 @@
     margin-top: 5rem;
     box-shadow: 10px 5px 3px lightgray;
 }
+
+/* SERVICES */
+.services-temp{
+    padding: 2rem 0;
+}
+.services-temp h2{
+    padding-top: 3rem;
+text-align: center;
+}
+.services-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem .5rem 0rem;
+}
+
+.service{
+    background-color: #fff;
+    border: none;
+    padding: 1rem;
+    width: 200px;
+    height: 180px;
+    margin: 2rem 3rem;
+}
+.service img {
+    width: 30%;
+    height: 35%;
+    padding: .5rem;
+}
+
+
+.service-txt{
+    padding: 0rem .3rem;
+}
+
+.service .vertical-icon {
+    width: 75px;
+    height: 85px;
+ 
+}
+
+.service h3 {
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+
 
 
 
@@ -176,10 +230,11 @@
     text-decoration: underline;
 }
 
-.help-link-img{
+.help-link-img {
     width: 70%;
     margin-top: 2rem;
 }
+
 .subscribe-area {
     height: 19.8rem;
     display: flex;
