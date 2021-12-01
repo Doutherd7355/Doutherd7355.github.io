@@ -57,30 +57,28 @@
                         <div class="formCancelBtn" id="formCancelBtn"><i class="fas fa-times-circle fa-2x"></i></div>
                         <h2>Tell us about your expeirence!</h2>
                         <h3>Your opinions matter and help us to improve the website</h3>
-                        <form class="ux-form" id="ux-form" autocomplete="on" name="ux-feedback-form">
-                            <fieldset aria-required="true" class="question_1">
+                        <form class="ux-form" id="ux-form" autocomplete="on" name="ux-feedback-form" action="https://formsubmit.co/vdydx@missouri.edu" method="POST" >
+                            <fieldset  class="question_1">
                                 <legend class="legend">Is this your first visit to our website? <span
                                         class="required">*</span>
                                 </legend>
                                 <small>Error Message</small>
-                                <input type="radio" name="q1_answer" id="q1_yes" value="Yes">
+                                <input type="radio" name="q1_answer" id="q1_yes" value="Yes" required>
                                 <label for="q1_yes">Yes</label><br>
                                 <input type="radio" name="q1_answer" id="q1_no" value="No">
                                 <label for="q1_no">No</label><br>
                             </fieldset>
-                            <fieldset aria-required="true" class="question_2">
+                            <fieldset  class="question_2">
                                 <legend>What is your primary reason for visiting this website? <span
                                         class="required">*</span> </legend>
                                 <small>Error Message</small>
-                                <input type="text" name="q2_answer" id="q2" placeholder="Type your answer here"
-                                    class="col-12">
-
-                                <span class="charCount">000/000</span>
+                                <textarea name="text" rows="7" cols="80" wrap="soft" maxlength="1000" required></textarea>
+                                <span class="charCount">000/1000</span>
                             </fieldset>
-                            <fieldset aria-required="true" class="question_3">
+                            <fieldset  class="question_3">
                                 <legend>Were you able to find what you needed? <span class="required">*</span> </legend>
                                 <small>Error Message</small>
-                                <input type="radio" name="q3_answer" id="q3_yes" value="Yes">
+                                <input type="radio" name="q3_answer" id="q3_yes" value="Yes" required>
                                 <label for="q3_yes">Yes</label><br>
                                 <input type="radio" name="q3_answer" id="q3_no" value="No">
                                 <label for="q3_no">No</label><br>
@@ -90,16 +88,16 @@
                                 <legend>If you didn't find what you were looking for, please tell us what you were
                                     looking for: <span class="required">*</span> </legend>
                                 <small>Error Message</small>
-                                <input type="text" name="q4" id="q4" placeholder="Type your answer here" class="col-12">
-                                <span class="charCount" id="charCount">000/000</span>
+                                <textarea name="text" rows="7" cols="80" wrap="soft" maxlength="1000" required></textarea>
+                                <span class="charCount" id="charCount">000/1000</span>
                             </fieldset>
 
                             <fieldset class="form-likert question_5">
-                                <legend aria-required="true">Finding information on this site was...<span
+                                <legend>Finding information on this site was...<span
                                         class="required">*</span></legend>
                                 <small>Error Message</small>
 
-                                <input type="radio" name="q5_answer" value="Very Difficult" id="q5_answer1">
+                                <input type="radio" name="q5_answer" value="Very Difficult" id="q5_answer1" required>
                                 <label for="q5_answer1" class="q5_a1_image"><img class="likert-img"
                                         src="./resources/VeryDifficult.jpg" alt="Angry Face Icon">Very Difficult</label>
 
@@ -121,10 +119,10 @@
 
                             </fieldset>
                             <fieldset class="form-likert question_6">
-                                <legend aria-required="true">Using this site was... <span class="required">*</span>
+                                <legend >Using this site was... <span class="required">*</span>
                                 </legend>
                                 <small>Error Message</small>
-                                <input type="radio" name="q6_answer" value="Very Difficult" id="q6_answer1">
+                                <input type="radio" name="q6_answer" value="Very Difficult" id="q6_answer1" required>
                                 <label for="q6_answer1" class="q5_a1_image"><img class="likert-img"
                                         src="./resources/VeryDifficult.jpg" alt="Angry Face Icon">Very Difficult</label>
 
@@ -148,10 +146,10 @@
                             <fieldset aria-required="false" class="question_7">
                                 <legend>Please provide any additional comments or suggestions [optional]: </legend>
                                 <small>Error Message</small>
-                                <input type="text" name="q7" id="q7" placeholder="Type your answer here" class="col-12">
-                                <span class="charCount">000/000</span>
+                                <textarea name="text" rows="7" cols="80" wrap="soft" maxlength="2000" required></textarea>
+                                <span class="charCount" id="charCount">000/2000</span>
                             </fieldset>
-                            <button type="submit" id="ux-form-submitBtn" class="ux-form-submitBtn">Submit</button>
+                            <input type="submit" id="ux-form-submitBtn" class="ux-form-submitBtn"></input>
                         </form>
                     </div>
                     <!-- END UX FEEDBACK FORM -->
