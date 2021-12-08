@@ -18,9 +18,19 @@ doraBtn.addEventListener("click", () =>{
 });
 
 
+// FAQ Sidebar
 
-
-
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("FaqSidebar").style.width = "100vw";
+    document.getElementById("faq-main").style.marginLeft = "250px";
+  }
+  
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("FaqSidebar").style.width = "0";
+    document.getElementById("faq-main").style.marginLeft = "0";
+  }
 
 
 

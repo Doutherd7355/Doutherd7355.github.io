@@ -44,7 +44,7 @@ body {
     align-items: center;
     width: 100%;
     position: relative;
-    top: 1rem;
+    top: 3rem;
     right: 0rem;
     font-size: 1.3rem
 }
@@ -74,19 +74,24 @@ body {
     transform: scale(1.1);
 }
 
-
+.navbar-container{
+    padding: 0;
+}
 .main-nav {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 8rem;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     margin: 3rem 0rem 0rem;
+    position: relative;
+    top: 3rem;
     list-style: none;
     font-size: 1.2rem;
-    padding: 0rem;
+    padding: 0%;
 }
+
 
 .nav-item {
     display: block;
@@ -94,12 +99,20 @@ body {
     color: #fff;
     font-weight: 600;
     height: auto;
-    width: 15rem;
-    padding: 1.9rem .6rem 2.5rem;
+    width: 100%;
+    padding: 3% 2.5% 3.5%;
     text-align: center;
-    margin: 0 .35rem;
+    margin: 0 .5%;
     border-top-left-radius: .625rem;
     border-top-right-radius: .625rem;
+}
+
+.nav-item:first-child{
+    margin-left: 0;
+}
+
+.nav-item:last-child{
+    margin-right: 0;
 }
 
 .nav-item:hover {
@@ -125,13 +138,14 @@ body {
 
 
 .ux-formBtn {
-    width: 70%;
+    width: 75%;
     height: 2.3rem;
-    font-size: 1.2rem;
+    font-size: 100%;
     padding: 0 0rem;
     position: relative;
     border: none;
     right: -6.5rem;
+    top: .5rem;
     background-color: var(--blue);
     color: white;
     font-weight: 600;
@@ -322,10 +336,8 @@ form .charCount {
 #main-content {
     padding: 0;
     position: relative;
-    top: -1.9rem;
     display: flex;
     justify-content: center;
-
 }
 
 .main-content-area {
@@ -342,6 +354,74 @@ form .charCount {
 }
 
 /* Faq area on subsites */
+/* The sidebar menu */
+.faq-sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .faq-sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .faq-sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .faq-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: auto;
+    cursor: pointer;
+    background-color: var(--green);
+    color: white;
+    padding: .8rem 3rem;
+    border: none;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 16.5rem;
+    left: -3rem;
+   
+  }
+  
+  .openbtn:hover {
+    background-color: #fff;
+    color: var(--green);
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #faq-main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+
+
 .faq-area {
     height: auto;
     background-color: var(--green);
